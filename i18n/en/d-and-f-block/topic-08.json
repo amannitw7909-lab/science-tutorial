@@ -1,0 +1,43 @@
+{
+  "title": "Actinoid Series, Comparisons & K₂Cr₂O₇ / KMnO₄",
+  "subtitle": "Actinoids, Transuranics, 10-Point Comparisons, K₂Cr₂O₇ & KMnO₄ Chemistry",
+  "sections": {
+    "actinoids": {
+      "heading": "Actinoid Series (5f Series)",
+      "p1": "Elements in which the last electron enters the 5f subshell are termed 5f-block elements or actinoids. Located in the 7th period of the periodic table.",
+      "p2": "Placed right after Actinium Ac-89 in Group 3 (III B), comprising 14 elements from Thorium (Th-90) to Lawrencium (Lr-103). Symbolized as An.",
+      "features": [
+        "Energy Equivalence: Energy gap between 5f, 6d and 7s subshells is extremely small, facilitating wide variability in oxidation states (+3 to +7).",
+        "Complete Radioactivity: Every single element in this series is radioactive.",
+        "Experimental Challenge (Half-Life): While Thorium and Uranium have long half-lives (billions of years), later transuranics have very short half-lives (days, hours, down to 3 minutes), creating extreme experimental difficulties."
+      ],
+      "transuranic": "Transuranic Elements: All elements beyond Uranium (Z = 92), from 93 (Np) to 103 (Lr) and beyond, are artificially synthesized via nuclear reactions. They are synthetic (man-made), radioactive, and unstable heavy elements."
+    },
+    "k2cr2o7": {
+      "heading": "Potassium Dichromate (K₂Cr₂O₇)",
+      "prepHeading": "Preparation of K₂Cr₂O₇ (Chromite Ore Process):",
+      "reactionsHeading": "Chemical Reactions of K₂Cr₂O₇:",
+      "r1": "(1) Thermal Decomposition: 4K₂Cr₂O₇ --Δ--> 4K₂CrO₄ + 2Cr₂O₃ + 3O₂",
+      "r2": "(2) Reaction with H₂SO₄: Dilute yields 2CrO₃ + 2KHSO₄ + H₂O; Concentrated yields 2K₂SO₄ + 2Cr₂(SO₄)₃ + 8H₂O + 3O₂ (green colour from chromic sulphate)",
+      "r3": "(3) Carbon Reduction (with steam): K₂Cr₂O₇ + H₂O + 3C --Δ--> Cr₂O₃ + 2KOH + 3CO",
+      "r4": "(4) Reaction with H₂O₂: K₂Cr₂O₇ + H₂SO₄ + 4H₂O₂ → 2CrO₅ + K₂SO₄ + 5H₂O (deep blue ethereal layer of chromium pentoxide CrO₅)",
+      "usesHeading": "6 Major Uses of K₂Cr₂O₇:"
+    },
+    "structures": {
+      "heading": "Structures & Properties of CrO₄²⁻ and Cr₂O₇²⁻",
+      "cro4": "Chromate Ion (CrO₄²⁻): Cr⁶⁺ → 3d⁰, n = 0, diamagnetic, yellow color, all four Cr—O bonds are equivalent due to resonance, hybridization sd³, tetrahedral geometry.",
+      "cr2o7": "Dichromate Ion (Cr₂O₇²⁻): Cr⁶⁺ → 3d⁰, n = 0, diamagnetic, orange-red color, two tetrahedra sharing one oxygen atom at an angle of 126° (Cr—O—Cr), terminal Cr—O = 163 pm, bridging Cr—O = 179 pm, hybridization sd³ (each Cr), tetrahedral at each Cr."
+    },
+    "kmno4": {
+      "heading": "Potassium Permanganate (KMnO₄)",
+      "prepHeading": "Preparation Methods of KMnO₄:",
+      "reactionsHeading": "Chemical Reactions of KMnO₄ (in Different Media):",
+      "rAlk": "Alkaline Medium: 2MnO₄⁻ + 2OH⁻ → 2MnO₄²⁻ + H₂O + O",
+      "rNeu": "Neutral Medium: 2MnO₄⁻ + H₂O → 2MnO₂ + 2OH⁻ + 3(O)",
+      "rAcid": "Acidic Medium: 2MnO₄⁻ + 6H⁺ → 2Mn²⁺ + 3H₂O + 5(O)",
+      "rH2s": "Reaction with H₂S: 2KMnO₄ + 3H₂S → 2MnO₂ + 3S + 2H₂O + 2KOH",
+      "propsHeading": "Physical Properties of KMnO₄:",
+      "usesHeading": "Major Uses of KMnO₄:"
+    }
+  }
+}

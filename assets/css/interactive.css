@@ -1,0 +1,644 @@
+/* ==========================================================================
+   interactive.css — Interactive Elements & Animations
+   Science Tutorial · NCERT Chemistry
+   ========================================================================== */
+
+/* ==========================================================================
+   Interactive Section Container
+   ========================================================================== */
+.topic-interactive {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(
+    160deg,
+    var(--color-primary-bg) 0%,
+    var(--color-surface) 50%,
+    var(--color-surface) 100%
+  );
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+}
+
+.topic-interactive__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.topic-interactive__title-icon {
+  font-size: 1.25em;
+}
+
+/* ==========================================================================
+   Custom Range Slider
+   ========================================================================== */
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.slider__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.slider__value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  background-color: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  font-family: var(--font-english);
+}
+
+/* Track & Thumb reset + custom */
+.slider__input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-gray-200);
+  outline: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+[data-theme="dark"] .slider__input {
+  background: var(--color-gray-700);
+}
+
+/* Webkit thumb */
+.slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  border: 3px solid var(--color-white);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.slider__input::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: var(--shadow-lg);
+}
+
+.slider__input:active::-webkit-slider-thumb {
+  transform: scale(1.05);
+}
+
+[data-theme="dark"] .slider__input::-webkit-slider-thumb {
+  border-color: var(--color-gray-800);
+}
+
+/* Firefox thumb */
+.slider__input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  border: 3px solid var(--color-white);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.slider__input::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: var(--shadow-lg);
+}
+
+[data-theme="dark"] .slider__input::-moz-range-thumb {
+  border-color: var(--color-gray-800);
+}
+
+/* Firefox track */
+.slider__input::-moz-range-track {
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-gray-200);
+}
+
+[data-theme="dark"] .slider__input::-moz-range-track {
+  background: var(--color-gray-700);
+}
+
+/* ==========================================================================
+   Calculator Panel
+   ========================================================================== */
+.calculator {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin: var(--space-md) 0;
+}
+
+@media (min-width: 768px) {
+  .calculator {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculator__section-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--space-sm);
+}
+
+.calculator__input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.calculator__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.calculator__field-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.calculator__field-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.calculator__field-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-focus);
+}
+
+.calculator__output {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--color-primary-bg) 0%, var(--color-surface) 100%);
+  border-radius: var(--radius-md);
+}
+
+.calculator__result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.calculator__result-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.calculator__result-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  font-family: var(--font-english);
+}
+
+.calculator__result-unit {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-normal);
+}
+
+/* ==========================================================================
+   Graph / Chart Container
+   ========================================================================== */
+.graph-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 768px) {
+  .graph-container {
+    height: 400px;
+    padding: var(--space-lg);
+  }
+}
+
+.graph-container__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.graph-container canvas {
+  width: 100% !important;
+  height: calc(100% - var(--space-xl)) !important;
+}
+
+/* ==========================================================================
+   Drag & Drop
+   ========================================================================== */
+.drag-zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  min-height: 60px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  transition: all var(--transition-fast);
+}
+
+.drag-zone.is-drag-over {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-bg);
+}
+
+.drop-zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  min-height: 80px;
+  border: 2px dashed var(--color-gray-300);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  transition: all var(--transition-fast);
+}
+
+.drop-zone.is-drag-over {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+  border-style: solid;
+}
+
+.drop-zone.is-correct {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
+.drop-zone.is-incorrect {
+  border-color: var(--color-error);
+  background-color: var(--color-error-light);
+  animation: shake 0.4s ease;
+}
+
+.draggable {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: grab;
+  touch-action: none;
+  transition: all var(--transition-fast);
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.draggable.is-dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.draggable:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Drag & Drop BEM aliases */
+.dragdrop {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.dragdrop__source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  min-height: 60px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  align-items: center;
+}
+
+.dragdrop__zones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+
+.dragdrop__zone {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  min-height: 100px;
+  border: 2px dashed var(--color-gray-300);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  transition: all var(--transition-fast);
+}
+
+.dragdrop__zone-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--space-xs);
+}
+
+.dragdrop__zone--over {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-bg);
+  border-style: solid;
+}
+
+.dragdrop__zone--correct {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
+.dragdrop__zone--incorrect {
+  border-color: var(--color-error);
+  background-color: var(--color-error-light);
+  animation: shake 0.4s ease;
+}
+
+.dragdrop__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: grab;
+  user-select: none;
+  transition: all var(--transition-fast);
+}
+
+.dragdrop__item:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.dragdrop__item:active {
+  cursor: grabbing;
+}
+
+.dragdrop__item--dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+/* ==========================================================================
+   Data Table (Solution Types Matrix, etc.)
+   ========================================================================== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+  font-size: var(--font-size-sm);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.data-table thead {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+}
+
+.data-table th {
+  padding: var(--space-md) var(--space-md);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-border-light);
+  color: var(--color-text-secondary);
+  vertical-align: top;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: var(--color-gray-50);
+}
+
+[data-theme="dark"] .data-table tbody tr:nth-child(even) {
+  background-color: var(--color-surface-raised);
+}
+
+/* Responsive table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-lg);
+}
+
+/* ==========================================================================
+   SVG Animation Container
+   ========================================================================== */
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--space-lg);
+  margin: var(--space-md) 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.svg-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Keyframe Animations
+   ========================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+@keyframes dissolve {
+  0%   { opacity: 1; filter: blur(0); }
+  50%  { opacity: 0.4; filter: blur(2px); }
+  100% { opacity: 0; filter: blur(4px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(6px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Utility Animation Classes
+   ========================================================================== */
+.animate-fade-in {
+  animation: fadeIn var(--transition-normal) both;
+}
+
+.animate-slide-up {
+  animation: slideUp var(--transition-normal) both;
+}
+
+.animate-slide-in {
+  animation: slideIn var(--transition-normal) both;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered animation delays for lists */
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }
+.stagger-6 { animation-delay: 300ms; }
+.stagger-7 { animation-delay: 350ms; }

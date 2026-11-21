@@ -1,0 +1,46 @@
+{
+  "title": "d-Block Elements & 4 Transition Series",
+  "subtitle": "d-Block Elements & 4 Transition Series",
+  "sections": {
+    "intro": {
+      "heading": "d-Block Elements: Definition & Position",
+      "p1": "Elements in whose atoms the last electron enters into the d-orbital are called d-block elements.",
+      "p2": "In these elements, the (n-1)d subshell is partially filled or the incoming electron enters the (n-1)d subshell.",
+      "p3": "In these elements, the number of electrons in the outermost shell (n) remains similar, hence similarity is observed in their properties.",
+      "p4": "d-block elements are also termed transition elements. Total number of d-block elements in the periodic table is 40. Transition elements are divided into four transition series."
+    },
+    "series1": {
+      "heading": "(a) First Transition Series (3d Series)",
+      "p1": "This series is also known as the 3d transition series.",
+      "p2": "This series contains 10 elements (Atomic numbers 21 to 30).",
+      "elements": "Sc₂₁, Ti₂₂, V₂₃, Cr₂₄, Mn₂₅, Fe₂₆, Co₂₇, Ni₂₈, Cu₂₉, Zn₃₀",
+      "p3": "These have an incomplete 3d subshell, while the 4s orbital contains one or two electrons.",
+      "p4": "General electronic configuration of this series is 3d¹⁻¹⁰ 4s¹⁻²."
+    },
+    "series2": {
+      "heading": "(b) Second Transition Series (4d Series)",
+      "p1": "This series is also known as the 4d transition series.",
+      "p2": "This series contains 10 elements (Atomic numbers 39 to 48).",
+      "elements": "Y₃₉, Zr₄₀, Nb₄₁, Mo₄₂, Tc₄₃, Ru₄₄, Rh₄₅, Pd₄₆, Ag₄₇, Cd₄₈",
+      "p3": "These have an incomplete 4d subshell, while 5s has one, two or zero electrons.",
+      "p4": "Electronic configuration of this series is 4d¹⁻¹⁰ 5s⁰⁻²."
+    },
+    "series3": {
+      "heading": "(c) Third Transition Series (5d Series)",
+      "p1": "This is also called the 5d transition series.",
+      "p2": "It contains 10 elements (Atomic number 57, then 72 to 80).",
+      "elements": "La₅₇, Hf₇₂, Ta₇₃, W₇₄, Re₇₅, Os₇₆, Ir₇₇, Pt₇₈, Au₇₉, Hg₈₀",
+      "p3": "It has an incomplete 5d subshell while the 6s orbital contains one or two electrons.",
+      "p4": "Their electronic configuration is 5d¹⁻¹⁰ 6s¹⁻²."
+    },
+    "series4": {
+      "heading": "(d) Fourth Transition Series (6d Series)",
+      "p1": "This is also called the 6d transition series.",
+      "p2": "This series has 10 elements, making it complete as well (Atomic numbers 89, 104 to 112).",
+      "elements": "Ac₈₉, Rf₁₀₄, Db₁₀₅, Sg₁₀₆, Bh₁₀₇, Hs₁₀₈, Mt₁₀₉, Ds₁₁₀, Rg₁₁₁, Uub₁₁₂ (Cn₁₁₂)",
+      "transactinide": "Elements from atomic number 104 to 112 are also called transactinide elements.",
+      "p3": "These contain an incomplete 6d subshell while the 7s orbital contains one or two electrons.",
+      "p4": "Their electronic configuration is 6d¹⁻¹⁰ 7s¹⁻²."
+    }
+  }
+}

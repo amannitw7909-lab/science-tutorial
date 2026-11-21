@@ -1,0 +1,381 @@
+/* ==========================================================================
+   base.css — CSS Reset + Typography + Element Defaults
+   Science Tutorial · NCERT Chemistry
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Modern CSS Reset
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-hindi);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Switch to Inter for English */
+html[lang="en"] body,
+.lang-en,
+.lang-en body {
+  font-family: var(--font-english);
+}
+
+/* --------------------------------------------------------------------------
+   Element Resets
+   -------------------------------------------------------------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-lg) 0;
+}
+
+/* --------------------------------------------------------------------------
+   Typography — Heading Scale
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-lg);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-md);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-md);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-sm);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-sm);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-sm);
+}
+
+/* Tablet+ heading scaling */
+@media (min-width: 768px) {
+  h1 { font-size: var(--font-size-4xl); }
+  h2 { font-size: var(--font-size-3xl); }
+  h3 { font-size: var(--font-size-2xl); }
+}
+
+p {
+  margin-bottom: var(--space-md);
+  line-height: var(--line-height-relaxed);
+}
+
+strong, b {
+  font-weight: var(--font-weight-semibold);
+}
+
+small {
+  font-size: var(--font-size-sm);
+}
+
+blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-md) 0;
+  background-color: var(--color-primary-bg);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-gray-100);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] code {
+  background-color: var(--color-gray-800);
+}
+
+pre {
+  overflow-x: auto;
+  padding: var(--space-md);
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+[data-theme="dark"] pre {
+  background-color: var(--color-gray-800);
+}
+
+/* --------------------------------------------------------------------------
+   Lists (within content)
+   -------------------------------------------------------------------------- */
+.content ul,
+.content ol,
+.topic ul,
+.topic ol {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.content ul li,
+.topic ul li {
+  list-style: disc;
+  margin-bottom: var(--space-xs);
+  line-height: var(--line-height-relaxed);
+}
+
+.content ol li,
+.topic ol li {
+  list-style: decimal;
+  margin-bottom: var(--space-xs);
+  line-height: var(--line-height-relaxed);
+}
+
+/* --------------------------------------------------------------------------
+   KaTeX Formula Styling
+   -------------------------------------------------------------------------- */
+.formula {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.05em;
+}
+
+.formula-block {
+  display: block;
+  text-align: center;
+  padding: var(--space-md) var(--space-sm);
+  margin: var(--space-md) 0;
+  overflow-x: auto;
+  font-size: 1.15em;
+}
+
+.formula-card {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-bg) 0%,
+    var(--color-surface) 100%
+  );
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+  transition: box-shadow var(--transition-normal);
+}
+
+.formula-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.formula-legend {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Make KaTeX responsive on small screens */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: var(--space-xs) 0;
+}
+
+/* --------------------------------------------------------------------------
+   Selection & Copy Protection
+   -------------------------------------------------------------------------- */
+.content,
+.topic,
+.topic-section,
+.topic-interactive {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Allow selection in interactive inputs */
+.content input,
+.content textarea,
+.topic input,
+.topic textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* --------------------------------------------------------------------------
+   Custom Scrollbar
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-400);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--color-gray-800);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--color-gray-600);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-300) var(--color-gray-100);
+}
+
+[data-theme="dark"] * {
+  scrollbar-color: var(--color-gray-600) var(--color-gray-800);
+}
+
+/* --------------------------------------------------------------------------
+   Focus Visible (Global)
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Screen Reader Only
+   -------------------------------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Print Prevention (No print option)
+   -------------------------------------------------------------------------- */
+@media print {
+  html, body {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+}

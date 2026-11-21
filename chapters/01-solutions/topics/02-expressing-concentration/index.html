@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <script>window.location.replace("../../../index.html#/expressing-concentration");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NCERT कक्षा 12 रसायन विज्ञान अध्याय 1/2: विलयन — सांद्रता व्यक्त करने के तरीके (Expressing Concentration)">
+  <meta name="theme-color" content="#6366F1">
+  <title>सांद्रता व्यक्त करने के तरीके — NCERT Chemistry Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <!-- Project CSS (load in order) -->
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/interactive.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__left">
+      <button class="site-header__hamburger btn btn--icon" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <a href="../../index.html" class="site-header__logo">
+        <span class="site-header__logo-icon" aria-hidden="true">⚗️</span>
+        <span data-i18n="site.title">NCERT विज्ञान ट्यूटोरियल</span>
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <button class="btn btn--lang" id="lang-toggle" aria-label="Switch language" data-i18n="nav.language">
+        English
+      </button>
+      <button class="btn btn--icon" id="theme-toggle" aria-label="Toggle dark mode" title="डार्क मोड">
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- ===== PAGE LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__title" data-i18n="chapter.title">अध्याय 2: विलयन</div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+
+      <!-- Topic Article -->
+      <article class="topic" data-protected="true">
+
+        <header class="topic-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge badge--topic" style="background: var(--color-topic-02-light); color: var(--color-topic-02-dark); margin-bottom: var(--space-sm);">विषय 02</span>
+          <h1 data-i18n="title">सांद्रता व्यक्त करने के तरीके</h1>
+          <p class="topic-subtitle" data-i18n="subtitle" style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">Expressing Concentration of Solutions</p>
+        </header>
+
+        <!-- INTRO -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.intro.heading">परिचय</h2>
+          <p data-i18n="sections.intro.content">
+            किसी विलयन की सांद्रता (Concentration) से तात्पर्य विलायक या विलयन की दी गई मात्रा में उपस्थित विलेय की मात्रा से है। सांद्रता को गुणात्मक (तनु अथवा सांद्र) तथा मात्रात्मक रूप से व्यक्त किया जा सकता है।
+          </p>
+        </section>
+
+        <!-- FORMULA CARDS -->
+        <section class="topic-section">
+          <h2>सांद्रता की प्रमुख इकाइयाँ</h2>
+
+          <!-- 1. Mass Percentage -->
+          <div class="card card--formula" style="margin-bottom: var(--space-lg);">
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md);">1. द्रव्यमान प्रतिशत (Mass Percentage - w/w)</h3>
+            <p>100 ग्राम विलयन में उपस्थित विलेय के ग्रामों की संख्या:</p>
+            <div class="formula-block" data-formula="\text{द्रव्यमान \% (w/w)} = \frac{\text{विलेय का द्रव्यमान (g)}}{\text{विलयन का कुल द्रव्यमान (g)}} \times 100"></div>
+          </div>
+
+          <!-- 2. Mole Fraction -->
+          <div class="card card--formula" style="margin-bottom: var(--space-lg);">
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md);">2. मोल अंश / मोल भिन्न (Mole Fraction - x)</h3>
+            <p>विलयन के किसी एक घटक के मोलों की संख्या तथा सभी घटकों के कुल मोलों की संख्या का अनुपात:</p>
+            <div class="formula-block" data-formula="x_B = \frac{n_B}{n_A + n_B}, \quad x_A + x_B = 1"></div>
+            <p class="formula-legend" style="color: var(--color-text-muted); font-size: var(--font-size-sm);">
+              जहाँ \(n_A = \frac{w_A}{M_A}\) तथा \(n_B = \frac{w_B}{M_B}\)। मोल अंश एक मात्रकहीन (unitless) राशि है और ताप से स्वतंत्र है।
+            </p>
+          </div>
+
+          <!-- 3. Molarity -->
+          <div class="card card--formula" style="margin-bottom: var(--space-lg);">
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md);">3. मोलरता (Molarity - M)</h3>
+            <p>1 लीटर (1000 mL) विलयन में घुले हुए विलेय के मोलों की संख्या:</p>
+            <div class="formula-block" data-formula="M = \frac{w_B \times 1000}{M_B \times V(\text{mL})} \quad [\text{मात्रक: mol/L या M}]"></div>
+            <div class="alert alert--warning" style="margin-top: var(--space-sm);">
+              ⚠️ <strong>परीक्षा के लिए महत्वपूर्ण:</strong> मोलरता ताप पर निर्भर करती है क्योंकि ताप बदलने पर विलयन का आयतन परिवर्तित होता है!
+            </div>
+          </div>
+
+          <!-- 4. Molality -->
+          <div class="card card--formula" style="margin-bottom: var(--space-lg);">
+            <h3 style="color: var(--color-primary); font-size: var(--font-size-md);">4. मोललता (Molality - m)</h3>
+            <p>1 किलोग्राम (1000 g) विलायक में घुले हुए विलेय के मोलों की संख्या:</p>
+            <div class="formula-block" data-formula="m = \frac{w_B \times 1000}{M_B \times W_A(\text{g})} \quad [\text{मात्रक: mol/kg या m}]"></div>
+            <div class="alert alert--tip" style="margin-top: var(--space-sm);">
+              💡 <strong>नोट:</strong> मोललता ताप पर निर्भर <strong>नहीं</strong> करती, क्योंकि द्रव्यमान ताप से अप्रभावित रहता है। इसलिए सांद्रता व्यक्त करने के लिए मोललता को मोलरता से बेहतर माना जाता है।
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE CALCULATOR -->
+        <section class="topic-interactive" id="calculator-section">
+          <div class="topic-interactive__title">
+            <span class="topic-interactive__title-icon" aria-hidden="true">🧮</span>
+            <span data-i18n="interactive.calcTitle">सांद्रता कैलकुलेटर (Concentration Calculator)</span>
+          </div>
+          <p style="margin-bottom: var(--space-lg); color: var(--color-text-secondary);" data-i18n="interactive.calcDesc">
+            विलेय का द्रव्यमान, मोलर द्रव्यमान एवं विलयन का आयतन दर्ज करें और मोलरता व मोललता की गणना देखें:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-lg);">
+            <div>
+              <label for="input-mass" style="display: block; font-size: var(--font-size-sm); margin-bottom: var(--space-xs); font-weight: 600;">विलेय का द्रव्यमान (wB in g):</label>
+              <input type="number" id="input-mass" value="5.85" step="0.01" min="0.1" style="width: 100%; padding: var(--space-sm); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+              <small style="color: var(--color-text-muted);">उदा: NaCl के लिए 5.85g</small>
+            </div>
+
+            <div>
+              <label for="input-molarmass" style="display: block; font-size: var(--font-size-sm); margin-bottom: var(--space-xs); font-weight: 600;">मोलर द्रव्यमान (MB in g/mol):</label>
+              <input type="number" id="input-molarmass" value="58.5" step="0.1" min="1" style="width: 100%; padding: var(--space-sm); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+              <small style="color: var(--color-text-muted);">NaCl का मोलर द्रव्यमान = 58.5</small>
+            </div>
+
+            <div>
+              <label for="input-vol" style="display: block; font-size: var(--font-size-sm); margin-bottom: var(--space-xs); font-weight: 600;">विलयन का आयतन (V in mL):</label>
+              <input type="number" id="input-vol" value="500" step="10" min="10" style="width: 100%; padding: var(--space-sm); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+              <small style="color: var(--color-text-muted);">उदा: 500 mL जल</small>
+            </div>
+          </div>
+
+          <div class="card" style="background: var(--color-surface); border: 1px solid var(--color-border); padding: var(--space-lg); border-radius: var(--radius-lg);">
+            <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">गणना के परिणाम (Calculated Results):</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md);">
+              <div style="background: var(--color-primary-bg); padding: var(--space-md); border-radius: var(--radius-md);">
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase;">विलेय के मोल (nB)</div>
+                <div id="res-moles" style="font-size: var(--font-size-xl); font-weight: bold; color: var(--color-primary);">0.10 mol</div>
+              </div>
+
+              <div style="background: var(--color-primary-bg); padding: var(--space-md); border-radius: var(--radius-md);">
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase;">मोलरता (Molarity - M)</div>
+                <div id="res-molarity" style="font-size: var(--font-size-xl); font-weight: bold; color: var(--color-primary);">0.20 M (mol/L)</div>
+              </div>
+
+              <div style="background: var(--color-primary-bg); padding: var(--space-md); border-radius: var(--radius-md);">
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase;">द्रव्यमान/आयतन % (w/v)</div>
+                <div id="res-wv" style="font-size: var(--font-size-xl); font-weight: bold; color: var(--color-primary);">1.17 %</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="topic-section">
+          <h2>स्व-मूल्यांकन प्रश्न (Check Your Understanding)</h2>
+          <div class="card" style="padding: var(--space-md); margin-top: var(--space-md);">
+            <h4>प्रश्न: निम्नलिखित में से कौन सी सांद्रता इकाई ताप परिवर्तन से प्रभावित नहीं होती है?</h4>
+            <div style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs);" id="q-options">
+              <label><input type="radio" name="conc-q" value="0"> मोलरता (Molarity)</label>
+              <label><input type="radio" name="conc-q" value="1"> मोललता (Molality)</label>
+              <label><input type="radio" name="conc-q" value="2"> नॉर्मलता (Normality)</label>
+              <label><input type="radio" name="conc-q" value="3"> आयतन प्रतिशत (v/v)</label>
+            </div>
+            <div id="conc-feedback" style="display: none; padding: var(--space-sm); border-radius: var(--radius-md); margin-top: var(--space-sm);"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Topic Navigation -->
+      <nav class="topic-nav" aria-label="Topic navigation" id="topic-nav"></nav>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p data-i18n="footer.madeFor">MP Board के छात्रों के लिए बनाया गया</p>
+    <p data-i18n="footer.ncert">NCERT पाठ्यक्रम पर आधारित</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

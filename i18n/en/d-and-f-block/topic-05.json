@@ -1,0 +1,26 @@
+{
+  "title": "Catalytic Properties & Coloured Compounds (d-d Transition)",
+  "subtitle": "Catalytic Mechanism & Crystal Field Splitting (d-d Transition)",
+  "sections": {
+    "catalyst": {
+      "heading": "Catalytic Properties",
+      "p1": "Transition metals and their compounds exhibit prominent catalytic properties, enhancing the rate of chemical reactions. This ability stems from their variable oxidation states and the availability of vacant or partially filled d-orbitals.",
+      "mechanismHeading": "How Does a Transition Metal Catalyst Work?",
+      "steps": [
+        "Transition metal utilizes vacant d-orbitals to bind reactant molecules to its surface",
+        "An unstable activated intermediate complex is formed",
+        "This provides an alternative reaction pathway with lower activation energy (Ea)",
+        "Reaction rate accelerates noticeably",
+        "Finally, after products form, the catalyst is regenerated unchanged"
+      ]
+    },
+    "coloured": {
+      "heading": "Coloured Compounds & d-d Transition",
+      "p1": "Most ions and compounds of transition metals are coloured due to the presence of partially filled d-orbitals.",
+      "p2": "In the presence of ligands, the degenerate d-orbitals split into two sets of energy levels: lower t₂g and higher eg. When white light falls on them, an electron absorbs energy and undergoes excitation from the lower to the higher energy level.",
+      "p3": "This process is termed d-d transition. The color observed corresponds to the complementary wavelength of the absorbed light.",
+      "rule1": "Incomplete d-subshell ⇒ d-d transition possible ⇒ Coloured compound",
+      "rule2": "d⁰ or d¹⁰ configuration ⇒ No d-d transition ⇒ Colourless ion (Ions with d¹ to d⁹ are coloured, whereas d⁰ and d¹⁰ ions are colourless)"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Expressing Concentration of Solutions",
+  "subtitle": "Expressing Concentration of Solutions",
+  "sections": {
+    "intro": {
+      "heading": "Introduction",
+      "content": "The concentration of a solution is defined as the amount of solute present in a given quantity of solvent or solution. Concentration can be expressed qualitatively (dilute or concentrated) or quantitatively."
+    },
+    "units": {
+      "heading": "Units of Concentration",
+      "content": "Quantitatively, concentration is expressed using the following primary units:"
+    }
+  },
+  "interactive": {
+    "calcTitle": "Concentration Calculator",
+    "calcDesc": "Enter solute mass, molar mass, and solution volume to calculate molarity and related units:",
+    "soluteMass": "Solute mass (g)",
+    "molarMass": "Solute molar mass (g/mol)",
+    "volume": "Solution volume (mL)",
+    "calculate": "Calculate",
+    "result": "Result"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Ideal & Non-Ideal Solutions",
+  "subtitle": "Ideal and Non-Ideal Solutions",
+  "sections": {
+    "intro": {
+      "heading": "Ideal Solutions",
+      "content": "Solutions which obey Raoult's law over the entire range of concentration are known as ideal solutions."
+    },
+    "nonideal": {
+      "heading": "Non-Ideal Solutions",
+      "content": "When a solution does not obey Raoult's law over the entire range of concentration, then it is called a non-ideal solution. These show positive or negative deviation."
+    }
+  }
+}

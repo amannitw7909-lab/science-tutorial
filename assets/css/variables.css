@@ -1,0 +1,286 @@
+/* ==========================================================================
+   variables.css — Design Tokens
+   Science Tutorial · NCERT Chemistry
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Color Palette
+   -------------------------------------------------------------------------- */
+:root {
+  /* Primary */
+  --color-primary:        #6366F1;
+  --color-primary-light:  #818CF8;
+  --color-primary-dark:   #4F46E5;
+  --color-primary-bg:     #EEF2FF;
+  --color-primary-hover:  #4338CA;
+
+  /* Semantic */
+  --color-success:        #22C55E;
+  --color-success-light:  #DCFCE7;
+  --color-success-dark:   #16A34A;
+  --color-warning:        #F59E0B;
+  --color-warning-light:  #FEF3C7;
+  --color-warning-dark:   #D97706;
+  --color-error:          #EF4444;
+  --color-error-light:    #FEE2E2;
+  --color-error-dark:     #DC2626;
+  --color-info:           #3B82F6;
+  --color-info-light:     #DBEAFE;
+  --color-info-dark:      #2563EB;
+
+  /* Neutrals */
+  --color-white:          #FFFFFF;
+  --color-gray-50:        #F8FAFC;
+  --color-gray-100:       #F1F5F9;
+  --color-gray-200:       #E2E8F0;
+  --color-gray-300:       #CBD5E1;
+  --color-gray-400:       #94A3B8;
+  --color-gray-500:       #64748B;
+  --color-gray-600:       #475569;
+  --color-gray-700:       #334155;
+  --color-gray-800:       #1E293B;
+  --color-gray-900:       #0F172A;
+  --color-black:          #020617;
+
+  /* --------------------------------------------------------------------------
+     Topic Accent Colors — 7 distinct hues
+     -------------------------------------------------------------------------- */
+  --color-topic-01:       #4CAF50;   /* Green  — Types of Solutions       */
+  --color-topic-01-light: #E8F5E9;
+  --color-topic-01-dark:  #388E3C;
+
+  --color-topic-02:       #2196F3;   /* Blue   — Expressing Concentration */
+  --color-topic-02-light: #E3F2FD;
+  --color-topic-02-dark:  #1976D2;
+
+  --color-topic-03:       #FF9800;   /* Orange — Solubility               */
+  --color-topic-03-light: #FFF3E0;
+  --color-topic-03-dark:  #F57C00;
+
+  --color-topic-04:       #9C27B0;   /* Purple — Vapour Pressure          */
+  --color-topic-04-light: #F3E5F5;
+  --color-topic-04-dark:  #7B1FA2;
+
+  --color-topic-05:       #F44336;   /* Red    — Colligative Properties   */
+  --color-topic-05-light: #FFEBEE;
+  --color-topic-05-dark:  #D32F2F;
+
+  --color-topic-06:       #00BCD4;   /* Teal   — Abnormal Molar Mass     */
+  --color-topic-06-light: #E0F7FA;
+  --color-topic-06-dark:  #0097A7;
+
+  --color-topic-07:       #E91E63;   /* Pink   — Osmotic Pressure         */
+  --color-topic-07-light: #FCE4EC;
+  --color-topic-07-dark:  #C2185B;
+
+  /* --------------------------------------------------------------------------
+     Chapter 02 Topic Accent Colors — d- & f-Block Elements (8 topics)
+     -------------------------------------------------------------------------- */
+  --color-ch2-01:       #0284C7;   /* Sky Blue  — 4 Transition Series         */
+  --color-ch2-01-light: #E0F2FE;
+  --color-ch2-01-dark:  #0369A1;
+
+  --color-ch2-02:       #8B5CF6;   /* Violet    — Electronic Configurations   */
+  --color-ch2-02-light: #EDE9FE;
+  --color-ch2-02-dark:  #6D28D9;
+
+  --color-ch2-03:       #0D9488;   /* Teal      — Transition Characteristics  */
+  --color-ch2-03-light: #CCFBF1;
+  --color-ch2-03-dark:  #0F766E;
+
+  --color-ch2-04:       #D97706;   /* Amber     — Metallic & Oxidation States */
+  --color-ch2-04-light: #FEF3C7;
+  --color-ch2-04-dark:  #B45309;
+
+  --color-ch2-05:       #DC2626;   /* Crimson   — Catalytic & Coloured Ions   */
+  --color-ch2-05-light: #FEE2E2;
+  --color-ch2-05-dark:  #991B1B;
+
+  --color-ch2-06:       #7C3AED;   /* Purple    — Magnetic, Alloys & Complexes*/
+  --color-ch2-06-light: #F3E8FF;
+  --color-ch2-06-dark:  #5B21B6;
+
+  --color-ch2-07:       #059669;   /* Emerald   — Lanthanoids & Contraction   */
+  --color-ch2-07-light: #D1FAE5;
+  --color-ch2-07-dark:  #047857;
+
+  --color-ch2-08:       #DB2777;   /* Pink/Rose — Actinoids, K2Cr2O7 & KMnO4  */
+  --color-ch2-08-light: #FCE7F3;
+  --color-ch2-08-dark:  #BE185D;
+
+  /* --------------------------------------------------------------------------
+     Surface & Text Colors (light mode defaults)
+     -------------------------------------------------------------------------- */
+  --color-bg:             #F8FAFC;
+  --color-bg-alt:         #FFFFFF;
+  --color-surface:        #FFFFFF;
+  --color-surface-raised: #FFFFFF;
+  --color-surface-hover:  #F1F5F9;
+  --color-border:         #E2E8F0;
+  --color-border-light:   #F1F5F9;
+
+  --color-text:           #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted:     #94A3B8;
+  --color-text-inverse:   #FFFFFF;
+  --color-link:           #6366F1;
+  --color-link-hover:     #4338CA;
+
+  /* Header / Sidebar */
+  --color-header-bg:      #FFFFFF;
+  --color-header-border:  #E2E8F0;
+  --color-sidebar-bg:     #FFFFFF;
+  --color-sidebar-border: #E2E8F0;
+
+  /* Overlay */
+  --color-overlay:        rgba(15, 23, 42, 0.5);
+
+  /* --------------------------------------------------------------------------
+     Typography
+     -------------------------------------------------------------------------- */
+  --font-hindi:           'Noto Sans Devanagari', sans-serif;
+  --font-english:         'Inter', sans-serif;
+  --font-mono:            'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  --font-size-xs:         0.75rem;    /* 12px */
+  --font-size-sm:         0.875rem;   /* 14px */
+  --font-size-base:       1rem;       /* 16px */
+  --font-size-md:         1.125rem;   /* 18px */
+  --font-size-lg:         1.25rem;    /* 20px */
+  --font-size-xl:         1.5rem;     /* 24px */
+  --font-size-2xl:        1.875rem;   /* 30px */
+  --font-size-3xl:        2.25rem;    /* 36px */
+  --font-size-4xl:        3rem;       /* 48px */
+
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  --line-height-tight:    1.25;
+  --line-height-normal:   1.6;
+  --line-height-relaxed:  1.75;
+
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide:  0.025em;
+
+  /* --------------------------------------------------------------------------
+     Spacing Scale (4px base)
+     -------------------------------------------------------------------------- */
+  --space-xs:   0.25rem;   /*  4px */
+  --space-sm:   0.5rem;    /*  8px */
+  --space-md:   1rem;      /* 16px */
+  --space-lg:   1.5rem;    /* 24px */
+  --space-xl:   2rem;      /* 32px */
+  --space-2xl:  3rem;      /* 48px */
+  --space-3xl:  4rem;      /* 64px */
+
+  /* --------------------------------------------------------------------------
+     Border Radius
+     -------------------------------------------------------------------------- */
+  --radius-sm:    0.25rem;   /* 4px  */
+  --radius-md:    0.5rem;    /* 8px  */
+  --radius-lg:    0.75rem;   /* 12px */
+  --radius-xl:    1rem;      /* 16px */
+  --radius-full:  9999px;
+
+  /* --------------------------------------------------------------------------
+     Shadows
+     -------------------------------------------------------------------------- */
+  --shadow-sm:  0 1px 2px  rgba(0, 0, 0, 0.05);
+  --shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.07),
+                0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.08),
+                0  4px  6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0  8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  /* Focus ring */
+  --shadow-focus: 0 0 0 3px rgba(99, 102, 241, 0.35);
+
+  /* --------------------------------------------------------------------------
+     Transitions
+     -------------------------------------------------------------------------- */
+  --transition-fast:   150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow:   500ms ease;
+
+  /* --------------------------------------------------------------------------
+     Z-Index Scale
+     -------------------------------------------------------------------------- */
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-modal:    300;
+  --z-overlay:  400;
+  --z-toast:    500;
+
+  /* --------------------------------------------------------------------------
+     Container / Layout
+     -------------------------------------------------------------------------- */
+  --container-sm:   640px;
+  --container-md:   768px;
+  --container-lg:   1024px;
+  --container-xl:   1280px;
+
+  --header-height:  3.5rem;
+  --sidebar-width:  280px;
+}
+
+/* ==========================================================================
+   Dark Mode Overrides
+   ========================================================================== */
+[data-theme="dark"] {
+  /* Surfaces */
+  --color-bg:             #0F172A;
+  --color-bg-alt:         #1E293B;
+  --color-surface:        #1E293B;
+  --color-surface-raised: #283548;
+  --color-surface-hover:  #334155;
+  --color-border:         #334155;
+  --color-border-light:   #1E293B;
+
+  /* Text */
+  --color-text:           #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted:     #64748B;
+  --color-text-inverse:   #0F172A;
+  --color-link:           #818CF8;
+  --color-link-hover:     #A5B4FC;
+
+  /* Header / Sidebar */
+  --color-header-bg:      #1E293B;
+  --color-header-border:  #334155;
+  --color-sidebar-bg:     #1E293B;
+  --color-sidebar-border: #334155;
+
+  /* Primary */
+  --color-primary-bg:     rgba(99, 102, 241, 0.15);
+
+  /* Semantic light variants soften in dark */
+  --color-success-light:  rgba(34, 197, 94, 0.15);
+  --color-warning-light:  rgba(245, 158, 11, 0.15);
+  --color-error-light:    rgba(239, 68, 68, 0.15);
+  --color-info-light:     rgba(59, 130, 246, 0.15);
+
+  /* Topic light variants */
+  --color-topic-01-light: rgba(76, 175, 80, 0.15);
+  --color-topic-02-light: rgba(33, 150, 243, 0.15);
+  --color-topic-03-light: rgba(255, 152, 0, 0.15);
+  --color-topic-04-light: rgba(156, 39, 176, 0.15);
+  --color-topic-05-light: rgba(244, 67, 54, 0.15);
+  --color-topic-06-light: rgba(0, 188, 212, 0.15);
+  --color-topic-07-light: rgba(233, 30, 99, 0.15);
+
+  /* Overlay */
+  --color-overlay:        rgba(0, 0, 0, 0.65);
+
+  /* Shadows — subtler in dark */
+  --shadow-sm:  0 1px 2px  rgba(0, 0, 0, 0.25);
+  --shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.3),
+                0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.35),
+                0  4px  6px -4px rgba(0, 0, 0, 0.2);
+  --shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.45),
+                0  8px 10px -6px rgba(0, 0, 0, 0.2);
+}

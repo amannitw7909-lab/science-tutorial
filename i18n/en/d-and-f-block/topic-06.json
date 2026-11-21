@@ -1,0 +1,44 @@
+{
+  "title": "Magnetic Moment, Interstitial, Alloys, Complexes, IP & Density",
+  "subtitle": "Magnetic Moment, Interstitials, 7 Alloys, Complexes, Ionization Enthalpy & Density",
+  "sections": {
+    "magnetic": {
+      "heading": "Magnetic Properties",
+      "p1": "Most transition metals and their compounds exhibit paramagnetism (attracted to magnetic fields).",
+      "p2": "Magnetic behaviour depends on the number of unpaired electrons. Substances with unpaired electrons are paramagnetic. Most elements from d¹ to d⁹ are paramagnetic.",
+      "p3": "Substances where all electrons are paired, such as d⁰ and d¹⁰ ions, are diamagnetic (repelled by magnetic fields).",
+      "formulaLegend": "Spin-only magnetic moment formula: μ = √(n(n+2)) Bohr Magnetons (B.M.), where n = number of unpaired electrons."
+    },
+    "interstitial": {
+      "heading": "Interstitial Compounds",
+      "p1": "Small interstitial spaces (voids) exist inside the crystal lattices of transition metals. When small non-metal atoms such as Hydrogen, Boron, Carbon, or Nitrogen (H, B, C, N) occupy these spaces, the resulting substances are called interstitial compounds.",
+      "p2": "These compounds are extremely hard, possess very high melting and boiling points, retain metallic electrical conductivity, and are chemically relatively inert. Their ductility and malleability are lower than pure metals.",
+      "examples": "Examples: Steel, cast iron, and TiC (Titanium carbide)."
+    },
+    "alloys": {
+      "heading": "Alloys",
+      "p1": "Due to similar atomic sizes (within 15%), transition metal atoms can readily substitute for one another in crystal lattices to form alloys when melted together.",
+      "p2": "Alloys are far more utilitarian than pure metals: much harder, higher melting points, and highly resistant to corrosion/rusting."
+    },
+    "complexes": {
+      "heading": "Coordination Complexes",
+      "p1": "Transition metals readily form complex compounds with ligands via coordinate covalent bonds. The driving factors are small cation size, high charge density, and availability of vacant d, s, and p orbitals to accept electron pairs.",
+      "p2": "These coordination complexes are exceptionally stable and retain their distinct identity even in aqueous solution.",
+      "examples": "Examples: K₄[Fe(CN)₆], [Cu(NH₃)₄]SO₄, and [Co(NH₃)₆]Cl₃."
+    },
+    "ip": {
+      "heading": "Ionization Enthalpy",
+      "p1": "The minimum energy required to remove the outermost electron from an isolated gaseous atom.",
+      "p2": "Ionization enthalpies of transition elements are higher than s-block metals but lower than p-block non-metals.",
+      "p3": "Along a transition series, increasing nuclear charge is opposed and balanced by increasing shielding from (n-1)d electrons, causing ionization enthalpy to increase very slowly and irregularly.",
+      "order": "Order of IP for 3d series: Sc < Ti > V < Cr < Mn < Fe > Co > Ni < Cu < Zn"
+    },
+    "density": {
+      "heading": "Density Trends",
+      "p1": "Density increases along the series due to decrease in metallic radius combined with increase in atomic mass. A steady increase is seen from Ti to Cu.",
+      "p2": "In the entire d-block, Osmium (Os) and Iridium (Ir) have the highest densities (~22.6 g/cm³), while Copper has the highest in the 3d series.",
+      "order": "3d Density order: Sc < Ti < V < Cr < Mn < Fe < Co < Ni < Cu > Zn (Increases from Ti to Cu, drops at Zn)",
+      "lanthanoidEffect": "Due to Lanthanoid Contraction, density rises dramatically down the group: Ti < Zr <<< Hf; Cu < Ag <<< Au."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Abnormal Molar Masses",
+  "subtitle": "Abnormal Molar Masses and Van't Hoff Factor",
+  "sections": {
+    "intro": {
+      "heading": "Introduction",
+      "content": "When a solute dissociates or associates in solution, the number of particles in the solution changes. Since colligative properties depend on the number of particles, the molar mass determined from these properties differs from the true molar mass, and is known as abnormal molar mass."
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "title": "Types of Solutions",
+  "subtitle": "Types of Solutions",
+  "sections": {
+    "intro": {
+      "heading": "Introduction",
+      "content": "A solution is a homogeneous mixture of two or more substances in which the components are mixed at the molecular or ionic level. The component present in larger quantity is called the solvent, and the one in smaller quantity is called the solute.",
+      "keyPoints": [
+        "A solution is a homogeneous mixture",
+        "A solution has at least two components — solute and solvent",
+        "Solute — the component present in smaller quantity",
+        "Solvent — the component present in larger quantity",
+        "The particle size in a solution is less than 1 nm"
+      ]
+    },
+    "types": {
+      "heading": "Nine Types of Solutions",
+      "content": "Based on the three states of matter (solid, liquid, gas), nine types of solutions are possible. Both solute and solvent can be solid, liquid, or gas.",
+      "tableCaption": "Types of Solutions — based on the states of solute and solvent"
+    },
+    "gaseous": {
+      "heading": "Gaseous Solutions",
+      "content": "When the solvent is a gas, a gaseous solution is formed. Air is the most common gaseous solution, containing nitrogen, oxygen, and other gases mixed together.",
+      "examples": [
+        "Air — O₂ gas in N₂ gas",
+        "Fragrance of camphor in air — solid in gas",
+        "Water vapour in air — liquid in gas"
+      ]
+    },
+    "liquid": {
+      "heading": "Liquid Solutions",
+      "content": "When the solvent is a liquid, a liquid solution is formed. These are the most common solutions. Water is the most common solvent and is therefore called the 'Universal Solvent'.",
+      "examples": [
+        "Salt water solution — solid in liquid (NaCl in H₂O)",
+        "Ethanol in water solution — liquid in liquid",
+        "CO₂ in water (soda water) — gas in liquid"
+      ]
+    },
+    "solid": {
+      "heading": "Solid Solutions",
+      "content": "When the solvent is a solid, a solid solution is formed. Alloys are the best examples of solid solutions.",
+      "examples": [
+        "Brass — Zn solid in Cu solid",
+        "Hydrogen in palladium — gas in solid",
+        "Mercury in gold (Amalgam) — liquid in solid"
+      ]
+    },
+    "characteristics": {
+      "heading": "Characteristics of Solutions",
+      "content": "Solutions have certain important characteristics that distinguish them from mixtures and colloids.",
+      "points": [
+        "A solution is homogeneous — all parts are identical",
+        "Particle size in a solution is less than 1 nm (10⁻⁹ m)",
+        "Particles of a solution cannot be seen even with an ultra-microscope",
+        "A solution is stable — particles do not settle down",
+        "A solution cannot be separated by filtration",
+        "A solution is transparent — a beam of light can pass through it (does not show Tyndall effect)"
+      ]
+    },
+    "comparison": {
+      "heading": "Comparison of Solution, Colloid, and Suspension",
+      "content": "Solution, Colloid, and Suspension are all mixtures but they differ in particle size and properties."
+    }
+  },
+  "interactive": {
+    "matrixTitle": "Solution Types Matrix",
+    "matrixInstruction": "Drag and drop examples to the correct position for each type of solution",
+    "solute": "Solute",
+    "solvent": "Solvent",
+    "solid": "Solid",
+    "liquid": "Liquid",
+    "gas": "Gas",
+    "example": "Example",
+    "dissolvingTitle": "Process of Dissolving",
+    "dissolvingInstruction": "Watch how solute particles dissolve in the solvent",
+    "startAnimation": "Start Animation",
+    "pauseAnimation": "Pause",
+    "speed": "Speed"
+  },
+  "quiz": {
+    "q1": "What type of solution is air?",
+    "q1_options": ["Gas in gas", "Gas in liquid", "Gas in solid", "Liquid in gas"],
+    "q1_answer": 0,
+    "q1_explanation": "Air contains various gases (O₂, CO₂, Ar, etc.) dissolved in the solvent gas N₂, making it a gas in gas solution.",
+    "q2": "What type of solution is brass?",
+    "q2_options": ["Solid in liquid", "Solid in solid", "Liquid in solid", "Solid in gas"],
+    "q2_answer": 1,
+    "q2_explanation": "Brass contains zinc (Zn) as solute dissolved in copper (Cu) as solvent. Both are solids, making it a solid in solid solution."
+  }
+}

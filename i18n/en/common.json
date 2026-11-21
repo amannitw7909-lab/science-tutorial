@@ -1,0 +1,111 @@
+{
+  "site": {
+    "title": "NCERT Science Tutorial",
+    "subtitle": "Class 12 Chemistry",
+    "description": "Interactive Science Learning Platform — MP Board & NCERT Curriculum"
+  },
+  "nav": {
+    "home": "Home",
+    "courseHome": "Course Overview",
+    "chapters": "Chapters",
+    "topics": "Topics",
+    "progress": "Progress",
+    "language": "हिंदी",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "chapters": {
+    "chapter01": {
+      "num": "01",
+      "title": "Chapter 1: Solutions",
+      "subtitle": "Solutions",
+      "short": "Solutions",
+      "desc": "Homogeneous mixtures, solubility, Raoult's Law, colligative properties & abnormal molar mass"
+    },
+    "chapter02": {
+      "num": "02",
+      "title": "Chapter 2: d- and f-Block Elements",
+      "subtitle": "d- & f-Block Elements",
+      "short": "d- & f-Block",
+      "desc": "Transition elements, 4 series, catalytic & magnetic properties, colours, alloys, f-block, lanthanoid contraction, K₂Cr₂O₇ & KMnO₄"
+    }
+  },
+  "chapter": {
+    "title": "NCERT Class 12 Chemistry",
+    "subtitle": "Select a Chapter"
+  },
+  "topics": {
+    "topic01": "Types of Solutions",
+    "topic02": "Expressing Concentration",
+    "topic03": "Solubility & Henry's Law",
+    "topic04": "Vapour Pressure & Raoult's Law",
+    "topic05": "Ideal & Non-Ideal Solutions",
+    "topic06": "Colligative Properties",
+    "topic07": "Abnormal Molar Masses"
+  },
+  "topicDescriptions": {
+    "topic01": "9 types of solid, liquid and gaseous solutions, solute & solvent roles",
+    "topic02": "Molality, molarity, mole fraction, mass %, and ppm with live calculator",
+    "topic03": "Solubility of solids and gases, temperature and pressure effects, Henry's Law",
+    "topic04": "Vapour pressure lowering, Raoult's Law and its applications",
+    "topic05": "Ideal solutions, types of deviations, and azeotropes",
+    "topic06": "Boiling point elevation, freezing point depression, osmotic pressure",
+    "topic07": "Van't Hoff factor (i), association and dissociation"
+  },
+  "dfTopics": {
+    "topic01": "d-Block Elements & 4 Transition Series",
+    "topic02": "Electronic Configurations (3d, 4d, 5d, 6d)",
+    "topic03": "Transition Elements: Definition & Characteristics",
+    "topic04": "Metallic Nature, Atomic Size & Oxidation States",
+    "topic05": "Catalytic Properties & Coloured Compounds (d-d Transition)",
+    "topic06": "Magnetic Moment, Interstitial, Alloys, Complexes, IP & Density",
+    "topic07": "f-Block Elements: Lanthanoid Series & Contraction",
+    "topic08": "Actinoid Series, Comparisons & K₂Cr₂O₇ / KMnO₄"
+  },
+  "dfTopicDescriptions": {
+    "topic01": "Definition, (n-1)d subshell, 3d, 4d, 5d, 6d transition series & transactinides",
+    "topic02": "Complete tables of all 40 transition elements with noble gas notation & anomalies",
+    "topic03": "Incomplete d-orbitals, Group 12 exceptions, Group 11 rationale, 8 non-typical vs 32 typical elements",
+    "topic04": "Metallic bonding, crystal lattices, radii trends, shielding balance & oxidation state table",
+    "topic05": "Catalytic mechanism & 7 reactions table, Crystal field splitting, d-d transition, 16 ions colour table",
+    "topic06": "Spin-only formula, interstitial compounds, 7 alloy compositions table, coordination complexes, IP & density trends",
+    "topic07": "4f subshell, 15 lanthanoid configurations & oxidation states table, +2/+4 stability, contraction & 3 consequences, Misch metal",
+    "topic08": "5f actinoids table, transuranics, 10-point d vs f comparison, 10-point Ln vs An comparison, K2Cr2O7 & KMnO4"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "chapter": "Chapter",
+    "chapter01": "Solutions",
+    "chapter02": "d- and f-Block Elements"
+  },
+  "topicNav": {
+    "previous": "Previous Topic",
+    "next": "Next Topic",
+    "backToHome": "Back to Home"
+  },
+  "landing": {
+    "heroTitle": "NCERT Chemistry",
+    "heroSubtitle": "Class 12 — Interactive Learning Portal",
+    "heroDescription": "Comprehensive illustrated notes, simulators, calculators, and self-assessment for Solutions and d- & f-Block Elements",
+    "startLearning": "Start Learning",
+    "topicsHeading": "Table of Contents",
+    "progressHeading": "Your Overall Progress",
+    "completed": "Completed",
+    "of": "of",
+    "topicsCompleted": "Topics Completed"
+  },
+  "footer": {
+    "madeFor": "Hariohm Classes , Silwani MP • MP Board 2026-27 Special",
+    "ncert": "NCERT Class 12 Chemistry Based • 📞 9074248383"
+  },
+  "interactive": {
+    "reset": "Reset",
+    "submit": "Submit",
+    "check": "Check",
+    "tryAgain": "Try Again",
+    "correct": "Correct ✓",
+    "incorrect": "Incorrect ✗",
+    "showAnswer": "Show Answer",
+    "hideAnswer": "Hide Answer"
+  }
+}

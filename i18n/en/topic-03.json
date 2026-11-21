@@ -1,0 +1,14 @@
+{
+  "title": "Solubility",
+  "subtitle": "Solubility of Solids and Gases in Liquids",
+  "sections": {
+    "intro": {
+      "heading": "Introduction",
+      "content": "Solubility is the maximum amount of a solute that can be dissolved in a specified amount of solvent at a specific temperature. When no more solute can be dissolved in a solution, it is called a saturated solution."
+    },
+    "henry": {
+      "heading": "Henry's Law",
+      "content": "At a constant temperature, the solubility of a gas in a liquid is directly proportional to the partial pressure of the gas present above the surface of the liquid or solution."
+    }
+  }
+}

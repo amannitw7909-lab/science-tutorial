@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <script>window.location.replace("../../index.html#/raoults-law");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NCERT कक्षा 12 रसायन विज्ञान अध्याय 1/2: विलयन — वाष्प दाब व राउल्ट का नियम (Raoult's Law)">
+  <meta name="theme-color" content="#6366F1">
+  <title>वाष्प दाब और राउल्ट का नियम — NCERT Chemistry Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <!-- Project CSS (load in order) -->
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/interactive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__left">
+      <button class="site-header__hamburger btn btn--icon" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <a href="../../index.html" class="site-header__logo">
+        <span class="site-header__logo-icon" aria-hidden="true">⚗️</span>
+        <span data-i18n="site.title">NCERT विज्ञान ट्यूटोरियल</span>
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <button class="btn btn--lang" id="lang-toggle" aria-label="Switch language" data-i18n="nav.language">English</button>
+      <button class="btn btn--icon" id="theme-toggle" aria-label="Toggle dark mode" title="डार्क मोड">
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- LAYOUT -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__title" data-i18n="chapter.title">अध्याय 2: विलयन</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+
+      <article class="topic" data-protected="true">
+
+        <header class="topic-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge badge--topic" style="background: var(--color-topic-04-light); color: var(--color-topic-04-dark); margin-bottom: var(--space-sm);">विषय 04</span>
+          <h1 data-i18n="title">वाष्प दाब और राउल्ट का नियम</h1>
+          <p class="topic-subtitle" data-i18n="subtitle" style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">Vapour Pressure and Raoult's Law</p>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.intro.heading">वाष्प दाब (Vapour Pressure)</h2>
+          <p data-i18n="sections.intro.content">
+            निश्चित ताप पर किसी द्रव की वाष्प द्वारा द्रव की सतह पर साम्यावस्था में डाला गया दाब उस द्रव का वाष्प दाब कहलाता है।
+          </p>
+
+          <div class="card card--concept" style="margin-top: var(--space-md);">
+            <h4>अवाष्पशील विलेय का प्रभाव (Effect of Non-Volatile Solute)</h4>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+              जब किसी शुद्ध विलायक में कोई अवाष्पशील विलेय (जैसे शर्करा या यूरिया) मिलाया जाता है, तो सतह पर विलायक के अणुओं द्वारा घेरा गया क्षेत्र घट जाता है। परिणामस्वरूप सतह छोड़कर जाने वाले वाष्प अणुओं की संख्या कम हो जाती है, जिससे <strong>विलयन का वाष्प दाब शुद्ध विलायक के वाष्प दाब से कम हो जाता है</strong> (वाष्प दाब में अवनमन)।
+            </p>
+          </div>
+        </section>
+
+        <!-- RAOULT'S LAW -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.raoult.heading">राउल्ट का नियम (Raoult's Law)</h2>
+          <p data-i18n="sections.raoult.content">
+            वाष्पशील द्रवों के विलयन में प्रत्येक घटक का आंशिक वाष्प दाब विलयन में उसके मोल अंश के सीधे समानुपाती होता है।
+          </p>
+
+          <div class="formula-card" style="margin: var(--space-lg) 0;">
+            <div class="formula-block" data-formula="p_1 = x_1 \cdot p_1^0, \quad p_2 = x_2 \cdot p_2^0"></div>
+            <div class="formula-block" data-formula="p_{\text{total}} = p_1 + p_2 = x_1 \cdot p_1^0 + x_2 \cdot p_2^0 = p_1^0 + (p_2^0 - p_1^0)x_2"></div>
+            <p class="formula-legend" style="text-align: center; color: var(--color-text-muted); font-size: var(--font-size-sm);">
+              जहाँ \(p_1^0\) व \(p_2^0\) शुद्ध घटकों के वाष्प दाब हैं, तथा \(x_1\) व \(x_2\) विलयन में उनके मोल अंश हैं।
+            </p>
+          </div>
+
+          <div class="alert alert--tip">
+            💡 <strong>राउल्ट का नियम हेनरी के नियम की एक विशेष स्थिति:</strong><br>
+            हेनरी नियम: \(p = K_H \cdot x\)<br>
+            राउल्ट नियम: \(p_1 = p_1^0 \cdot x_1\)<br>
+            दोनों की तुलना करने पर स्पष्ट है कि राउल्ट का नियम हेनरी के नियम की वह विशेष स्थिति है जिसमें \(K_H\) का मान शुद्ध घटक के वाष्प दाब \(p_1^0\) के बराबर हो जाता है!
+          </div>
+        </section>
+
+        <!-- INTERACTIVE P vs X GRAPH BUILDER -->
+        <section class="topic-interactive">
+          <div class="topic-interactive__title">
+            <span class="topic-interactive__title-icon" aria-hidden="true">📊</span>
+            <span>राउल्ट नियम वाष्प दाब आरेख (Interactive P-x Diagram)</span>
+          </div>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+            घटक 2 के मोल अंश (\(x_2\)) का मान स्लाइडर से बदलें और देखें कि आंशिक दाब \(p_1\), \(p_2\) तथा कुल दाब \(p_{\text{total}}\) कैसे बदलते हैं:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-md);">
+            <div class="slider">
+              <div class="slider__label">
+                <span>घटक 2 का मोल अंश (\(x_2\)):</span>
+                <span class="slider__value" id="val-x2">0.50</span>
+              </div>
+              <input type="range" class="slider__input" id="slider-x2" min="0" max="1" step="0.05" value="0.5">
+            </div>
+
+            <div style="background: var(--color-surface); padding: var(--space-sm); border-radius: var(--radius-md); border: 1px solid var(--color-border); font-size: var(--font-size-sm);">
+              <div><strong>शुद्ध घटक 1 (\(p_1^0\)):</strong> 100 mm Hg</div>
+              <div><strong>शुद्ध घटक 2 (\(p_2^0\)):</strong> 200 mm Hg</div>
+            </div>
+          </div>
+
+          <div class="graph-container" style="position: relative; height: 320px; width: 100%; background: var(--color-surface); padding: var(--space-sm); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+            <canvas id="raoult-chart"></canvas>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: var(--space-md); padding: var(--space-sm); background: var(--color-primary-bg); border-radius: var(--radius-md); font-weight: bold; font-size: var(--font-size-sm);">
+            <span style="color: #3B82F6;" id="disp-p1">p₁ = 50.0 mm Hg</span>
+            <span style="color: #10B981;" id="disp-p2">p₂ = 100.0 mm Hg</span>
+            <span style="color: #8B5CF6;" id="disp-ptot">ptotal = 150.0 mm Hg</span>
+          </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="topic-section">
+          <h2>स्व-मूल्यांकन प्रश्न</h2>
+          <div class="card" style="padding: var(--space-md);">
+            <h4>प्रश्न: जब शुद्ध जल में शर्करा (अवाष्पशील विलेय) घोली जाती है, तो वाष्प दाब पर क्या प्रभाव पड़ता है?</h4>
+            <div style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs);" id="raoult-quiz-options">
+              <label><input type="radio" name="raoult-q" value="0"> वाष्प दाब बढ़ता है</label>
+              <label><input type="radio" name="raoult-q" value="1"> वाष्प दाब घटता है (अवनमन)</label>
+              <label><input type="radio" name="raoult-q" value="2"> कोई परिवर्तन नहीं होता</label>
+            </div>
+            <div id="raoult-feedback" style="display: none; padding: var(--space-sm); border-radius: var(--radius-md); margin-top: var(--space-sm);"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <nav class="topic-nav" aria-label="Topic navigation" id="topic-nav"></nav>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.madeFor">MP Board के छात्रों के लिए बनाया गया</p>
+    <p data-i18n="footer.ncert">NCERT पाठ्यक्रम पर आधारित</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

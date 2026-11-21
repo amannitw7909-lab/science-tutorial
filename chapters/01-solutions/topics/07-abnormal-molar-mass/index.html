@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <script>window.location.replace("../../../index.html#/abnormal-molar-mass");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NCERT कक्षा 12 रसायन विज्ञान अध्याय 1/2: विलयन — असामान्य मोलर द्रव्यमान व वान्ट हॉफ गुणक (Van't Hoff Factor)">
+  <meta name="theme-color" content="#6366F1">
+  <title>असामान्य मोलर द्रव्यमान — NCERT Chemistry Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <!-- Project CSS (load in order) -->
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/interactive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__left">
+      <button class="site-header__hamburger btn btn--icon" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <a href="../../index.html" class="site-header__logo">
+        <span class="site-header__logo-icon" aria-hidden="true">⚗️</span>
+        <span data-i18n="site.title">NCERT विज्ञान ट्यूटोरियल</span>
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <button class="btn btn--lang" id="lang-toggle" aria-label="Switch language" data-i18n="nav.language">English</button>
+      <button class="btn btn--icon" id="theme-toggle" aria-label="Toggle dark mode" title="डार्क मोड">
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- LAYOUT -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__title" data-i18n="chapter.title">अध्याय 2: विलयन</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+
+      <article class="topic" data-protected="true">
+
+        <header class="topic-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge badge--topic" style="background: var(--color-topic-07-light); color: var(--color-topic-07-dark); margin-bottom: var(--space-sm);">विषय 07</span>
+          <h1 data-i18n="title">असामान्य मोलर द्रव्यमान (Abnormal Molar Mass)</h1>
+          <p class="topic-subtitle" data-i18n="subtitle" style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">Abnormal Molar Masses and Van't Hoff Factor</p>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.intro.heading">परिचय</h2>
+          <p data-i18n="sections.intro.content">
+            जब विलेय विलयन में वियोजित (dissociate) या संगुणित (associate) होता है, तो विलयन में कणों की संख्या बदल जाती है। चूँकि अणुसंख्यक गुणधर्म कणों की संख्या पर निर्भर करते हैं, अतः इन गुणधर्मों से ज्ञात मोलर द्रव्यमान उसके वास्तविक मोलर द्रव्यमान से भिन्न प्राप्त होता है, जिसे <strong>असामान्य मोलर द्रव्यमान</strong> कहते हैं।
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+            <div class="card" style="border-left: 4px solid var(--color-success);">
+              <h4 style="color: var(--color-success-dark);">1. वियोजन (Dissociation)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                विद्युत अपघट्य (उदा: NaCl, KCl) जल में आयनों में टूट जाते हैं। कणों की संख्या बढ़ती है, अतः अणुसंख्यक गुणधर्म बढ़ जाते हैं तथा प्रेक्षित मोलर द्रव्यमान वास्तविक मान से <strong>कम</strong> हो जाता है।
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--color-warning);">
+              <h4 style="color: var(--color-warning-dark);">2. संगुणन (Association)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                कुछ विलेय (उदा: बेंजीन में एसिटिक एसिड) हाइड्रोजन बंध द्वारा द्विलक (dimer) बना लेते हैं। कणों की संख्या घटती है, अतः अणुसंख्यक गुणधर्म घट जाते हैं तथा प्रेक्षित मोलर द्रव्यमान वास्तविक मान से <strong>अधिक</strong> (लगभग दोगुना) हो जाता है।
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- VAN'T HOFF FACTOR -->
+        <section class="topic-section">
+          <h2>वान्ट हॉफ गुणक (Van't Hoff Factor — \(i\))</h2>
+          <p>
+            विलेय के संगुणन या वियोजन की सीमा को निर्धारित करने के लिए वान्ट हॉफ ने एक गुणक (\(i\)) प्रतिपादित किया:
+          </p>
+
+          <div class="formula-card" style="margin: var(--space-lg) 0;">
+            <div class="formula-block" data-formula="i = \frac{\text{सामान्य (सैद्धांतिक) मोलर द्रव्यमान}}{\text{असामान्य (प्रायोगिक) मोलर द्रव्यमान}} = \frac{\text{अणुसंख्यक गुणधर्म का प्रेक्षित मान}}{\text{अणुसंख्यक गुणधर्म का परिकलित मान}}"></div>
+            <div class="formula-block" data-formula="i = \frac{\text{संगुणन या वियोजन के पश्चात कणों के कुल मोल}}{\text{संगुणन या वियोजन से पूर्व कणों के कुल मोल}}"></div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md);">
+            <div class="card" style="background: var(--color-primary-bg);">
+              <strong>वियोजन के लिए:</strong>
+              <div style="font-size: var(--font-size-lg); font-weight: bold; color: var(--color-primary); margin: var(--space-xs) 0;">\(i > 1\)</div>
+              <small>उदा: \(\text{NaCl}\) के लिए \(i = 2\), \(\text{MgCl}_2\) के लिए \(i = 3\)</small>
+            </div>
+
+            <div class="card" style="background: var(--color-primary-bg);">
+              <strong>संगुणन के लिए:</strong>
+              <div style="font-size: var(--font-size-lg); font-weight: bold; color: var(--color-primary); margin: var(--space-xs) 0;">\(i < 1\)</div>
+              <small>उदा: बेंजीन में \(\text{CH}_3\text{COOH}\) द्विलक बनने पर \(i \approx 0.5\)</small>
+            </div>
+
+            <div class="card" style="background: var(--color-primary-bg);">
+              <strong>न वियोजन, न संगुणन:</strong>
+              <div style="font-size: var(--font-size-lg); font-weight: bold; color: var(--color-primary); margin: var(--space-xs) 0;">\(i = 1\)</div>
+              <small>उदा: ग्लूकोस, यूरिया, सुक्रोस (अनपघट्य)</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODIFIED FORMULAS -->
+        <section class="topic-section">
+          <h2>संशोधित अणुसंख्यक सूत्र (Modified Equations with \(i\))</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+            <div class="card card--formula">
+              <h4>वाष्प दाब अवनमन</h4>
+              <div class="formula-block" data-formula="\frac{p_1^0 - p_1}{p_1^0} = i \cdot x_2"></div>
+            </div>
+            <div class="card card--formula">
+              <h4>क्वथनांक उन्नयन</h4>
+              <div class="formula-block" data-formula="\Delta T_b = i \cdot K_b \cdot m"></div>
+            </div>
+            <div class="card card--formula">
+              <h4>हिमांक अवनमन</h4>
+              <div class="formula-block" data-formula="\Delta T_f = i \cdot K_f \cdot m"></div>
+            </div>
+            <div class="card card--formula">
+              <h4>परासरण दाब</h4>
+              <div class="formula-block" data-formula="\pi = i \cdot C R T"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE VAN'T HOFF CALCULATOR -->
+        <section class="topic-interactive">
+          <div class="topic-interactive__title">
+            <span class="topic-interactive__title-icon" aria-hidden="true">🧮</span>
+            <span>वान्ट हॉफ गुणक कैलकुलेटर (Interactive \(i\) Calculator)</span>
+          </div>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+            विलेय का प्रकार चुनें और वियोजन/संगुणन की मात्रा (\(\alpha\)) बदलकर वान्ट हॉफ गुणक (\(i\)) की गणना देखें:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-md);">
+            <div>
+              <label for="select-type" style="display: block; font-size: var(--font-size-sm); font-weight: bold; margin-bottom: var(--space-xs);">विद्युत अपघट्य का प्रकार:</label>
+              <select id="select-type" style="width: 100%; padding: var(--space-sm); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text);">
+                <option value="2">NaCl / KCl (n = 2 आयन)</option>
+                <option value="3">CaCl₂ / MgCl₂ (n = 3 आयन)</option>
+                <option value="4">FeCl₃ / AlCl₃ (n = 4 आयन)</option>
+                <option value="dimer">एसिटिक एसिड (Dimerization n = 2)</option>
+              </select>
+            </div>
+
+            <div class="slider">
+              <div class="slider__label">
+                <span>वियोजन/संगुणन की मात्रा (\(\alpha\)):</span>
+                <span class="slider__value" id="val-alpha">100% (1.00)</span>
+              </div>
+              <input type="range" class="slider__input" id="slider-alpha" min="0" max="1" step="0.05" value="1.0">
+            </div>
+          </div>
+
+          <div class="card" style="background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: var(--space-md);">
+              <div style="text-align: center;">
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase;">वान्ट हॉफ गुणक (\(i\))</div>
+                <div id="res-i" style="font-size: 2.5rem; font-weight: bold; color: var(--color-primary); line-height: 1.2;">2.00</div>
+              </div>
+
+              <div style="text-align: center;">
+                <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); text-transform: uppercase;">प्रायोगिक अणुसंख्यक प्रभाव</div>
+                <div id="res-effect" style="font-size: var(--font-size-lg); font-weight: bold; color: var(--color-success-dark);">दोगुना प्रभाव (\(\times 2.0\))</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="topic-section">
+          <h2>स्व-मूल्यांकन प्रश्न</h2>
+          <div class="card" style="padding: var(--space-md);">
+            <h4>प्रश्न: निम्नलिखित 0.1 M जलीय विलयनों में से किसका हिमांक अवनमन (\(\Delta T_f\)) सर्वाधिक होगा?</h4>
+            <div style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs);" id="abnormal-options">
+              <label><input type="radio" name="abnormal-q" value="0"> 0.1 M ग्लूकोस (\(i = 1\))</label>
+              <label><input type="radio" name="abnormal-q" value="1"> 0.1 M NaCl (\(i = 2\))</label>
+              <label><input type="radio" name="abnormal-q" value="2"> 0.1 M CaCl₂ (\(i = 3\))</label>
+              <label><input type="radio" name="abnormal-q" value="3"> 0.1 M सुक्रोस (\(i = 1\))</label>
+            </div>
+            <div id="abnormal-feedback" style="display: none; padding: var(--space-sm); border-radius: var(--radius-md); margin-top: var(--space-sm);"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <nav class="topic-nav" aria-label="Topic navigation" id="topic-nav"></nav>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.madeFor">MP Board के छात्रों के लिए बनाया गया</p>
+    <p data-i18n="footer.ncert">NCERT पाठ्यक्रम पर आधारित</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

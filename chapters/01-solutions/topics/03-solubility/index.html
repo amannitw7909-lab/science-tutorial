@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <script>window.location.replace("../../../index.html#/solubility");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NCERT कक्षा 12 रसायन विज्ञान अध्याय 1/2: विलयन — विलेयता व हेनरी का नियम (Solubility & Henry's Law)">
+  <meta name="theme-color" content="#6366F1">
+  <title>विलेयता — NCERT Chemistry Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <!-- Project CSS (load in order) -->
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/interactive.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__left">
+      <button class="site-header__hamburger btn btn--icon" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <a href="../../index.html" class="site-header__logo">
+        <span class="site-header__logo-icon" aria-hidden="true">⚗️</span>
+        <span data-i18n="site.title">NCERT विज्ञान ट्यूटोरियल</span>
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <button class="btn btn--lang" id="lang-toggle" aria-label="Switch language" data-i18n="nav.language">English</button>
+      <button class="btn btn--icon" id="theme-toggle" aria-label="Toggle dark mode" title="डार्क मोड">
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- ===== PAGE LAYOUT ===== -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__title" data-i18n="chapter.title">अध्याय 2: विलयन</div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+
+      <!-- Topic Article -->
+      <article class="topic" data-protected="true">
+
+        <header class="topic-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge badge--topic" style="background: var(--color-topic-03-light); color: var(--color-topic-03-dark); margin-bottom: var(--space-sm);">विषय 03</span>
+          <h1 data-i18n="title">विलेयता (Solubility)</h1>
+          <p class="topic-subtitle" data-i18n="subtitle" style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">Solubility of Solids and Gases in Liquids</p>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.intro.heading">परिचय</h2>
+          <p data-i18n="sections.intro.content">
+            निश्चित ताप पर विलायक की एक निर्दिष्ट मात्रा में घुली हुई विलेय की अधिकतम मात्रा को उसकी विलेयता (Solubility) कहते हैं। जब किसी विलयन में और अधिक विलेय नहीं घोला जा सकता, तो वह संतृप्त विलयन (Saturated Solution) कहलाता है।
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+            <div class="card">
+              <h4 style="color: var(--color-primary);">असंतृप्त विलयन (Unsaturated)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">जिसमें उसी ताप पर और अधिक विलेय घोला जा सकता है।</p>
+            </div>
+            <div class="card">
+              <h4 style="color: var(--color-primary);">संतृप्त विलयन (Saturated)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">जिसमें उसी ताप पर और अधिक विलेय नहीं घोला जा सकता (विलेय व अविलेय कणों में साम्यावस्था होती है)।</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- HENRY'S LAW -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.henry.heading">गैसों की विलेयता व हेनरी का नियम (Henry's Law)</h2>
+          <p data-i18n="sections.henry.content">
+            स्थिर ताप पर किसी विलायक में किसी गैस की विलेयता विलयन की सतह पर उपस्थित गैस के आंशिक दाब के समानुपाती होती है।
+          </p>
+
+          <div class="formula-card" style="margin: var(--space-lg) 0;">
+            <div class="formula-block" data-formula="p = K_H \cdot x"></div>
+            <p class="formula-legend" style="text-align: center; color: var(--color-text-muted); font-size: var(--font-size-sm);">
+              जहाँ \(p =\) गैस का आंशिक दाब, \(x =\) विलयन में गैस का मोल अंश, \(K_H =\) हेनरी स्थिरांक (Henry's Law Constant)।
+            </p>
+          </div>
+
+          <div class="alert alert--info">
+            📌 <strong>\(K_H\) के महत्वपूर्ण गुण:</strong>
+            <ul style="margin-top: var(--space-xs); padding-left: var(--space-md);">
+              <li>विभिन्न गैसों के लिए समान ताप पर \(K_H\) का मान भिन्न होता है।</li>
+              <li>ताप बढ़ाने पर \(K_H\) का मान बढ़ता है, अतः <strong>ताप बढ़ने पर गैस की विलेयता घटती है</strong>।</li>
+              <li>यही कारण है कि जलीय जीव गर्म जल की तुलना में ठंडे जल में अधिक सहज रहते हैं (क्योंकि ठंडे जल में अधिक घुली हुई \(O_2\) होती है)।</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE SOLUBILITY CURVES WITH CHART.JS -->
+        <section class="topic-interactive">
+          <div class="topic-interactive__title">
+            <span class="topic-interactive__title-icon" aria-hidden="true">📈</span>
+            <span>तापमान का विलेयता पर प्रभाव (Interactive Solubility Curves)</span>
+          </div>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+            नीचे दिए गए तापमान स्लाइडर को खिसकाकर देखें कि विभिन्न लवणों (KNO₃, NaCl, Ce₂(SO₄)₃) की विलेयता तापमान के साथ कैसे बदलती है:
+          </p>
+
+          <div class="slider" style="margin-bottom: var(--space-lg);">
+            <div class="slider__label">
+              <span>तापमान (Temperature in °C):</span>
+              <span class="slider__value" id="temp-display">30 °C</span>
+            </div>
+            <input type="range" class="slider__input" id="temp-slider" min="0" max="100" value="30" step="5">
+          </div>
+
+          <div class="graph-container" style="position: relative; height: 320px; width: 100%; background: var(--color-surface); padding: var(--space-sm); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+            <canvas id="solubility-chart"></canvas>
+          </div>
+
+          <div id="chart-legend-info" style="margin-top: var(--space-md); padding: var(--space-sm); background: var(--color-primary-bg); border-radius: var(--radius-md); font-size: var(--font-size-sm);">
+            <strong>30 °C पर विलेयता (g per 100g H₂O):</strong>
+            <span id="sol-kno3" style="margin-left: var(--space-md); color: #EF4444; font-weight: bold;">KNO₃: 45 g</span>
+            <span id="sol-nacl" style="margin-left: var(--space-md); color: #3B82F6; font-weight: bold;">NaCl: 36 g</span>
+            <span id="sol-ce" style="margin-left: var(--space-md); color: #10B981; font-weight: bold;">Ce₂(SO₄)₃: 7 g</span>
+          </div>
+        </section>
+
+        <!-- APPLICATIONS OF HENRY'S LAW -->
+        <section class="topic-section">
+          <h2>हेनरी के नियम के व्यावहारिक अनुप्रयोग</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+            <div class="card">
+              <h4 style="color: var(--color-primary);">1. सोडा वॉटर बोतल</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">शीतल पेयों में \(\text{CO}_2\) की विलेयता बढ़ाने के लिए बोतलों को उच्च दाब पर सील किया जाता है। ढक्कन खोलते ही दाब घटता है और गैस तेजी से बुलबुलों के रूप में बाहर निकलती है।</p>
+            </div>
+            <div class="card">
+              <h4 style="color: var(--color-primary);">2. गहरे समुद्र में गोताखोर (Scuba Divers)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">गहरे समुद्र में उच्च दाब पर रक्त में नाइट्रोजन घुल जाती है। ऊपर आते समय दाब कम होने से रक्त में नाइट्रोजन के बुलबुले बनते हैं, जिसे 'बेंड्स' (Bends) कहते हैं। इससे बचने के लिए हीलियम युक्त तनु गैस का उपयोग किया जाता है।</p>
+            </div>
+            <div class="card">
+              <h4 style="color: var(--color-primary);">3. पर्वतारोही व एनोक्सिया (Anoxia)</h4>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">अधिक ऊँचाई पर ऑक्सीजन का आंशिक दाब कम होता है, जिससे रक्त में \(O_2\) की मात्रा घट जाती है और सोचने-समझने की क्षमता कम होती है, जिसे 'एनोक्सिया' कहते हैं।</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="topic-section">
+          <h2>स्व-मूल्यांकन प्रश्न</h2>
+          <div class="card" style="padding: var(--space-md);">
+            <h4>प्रश्न: हेनरी स्थिरांक (\(K_H\)) का मान बढ़ने पर गैस की विलेयता पर क्या प्रभाव पड़ता है?</h4>
+            <div style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs);" id="henry-options">
+              <label><input type="radio" name="henry-q" value="0"> विलेयता बढ़ती है</label>
+              <label><input type="radio" name="henry-q" value="1"> विलेयता घटती है</label>
+              <label><input type="radio" name="henry-q" value="2"> कोई प्रभाव नहीं पड़ता</label>
+            </div>
+            <div id="henry-feedback" style="display: none; padding: var(--space-sm); border-radius: var(--radius-md); margin-top: var(--space-sm);"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Topic Navigation -->
+      <nav class="topic-nav" aria-label="Topic navigation" id="topic-nav"></nav>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p data-i18n="footer.madeFor">MP Board के छात्रों के लिए बनाया गया</p>
+    <p data-i18n="footer.ncert">NCERT पाठ्यक्रम पर आधारित</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

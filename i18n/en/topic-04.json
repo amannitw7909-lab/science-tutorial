@@ -1,0 +1,14 @@
+{
+  "title": "Vapour Pressure & Raoult's Law",
+  "subtitle": "Vapour Pressure and Raoult's Law",
+  "sections": {
+    "intro": {
+      "heading": "Vapour Pressure",
+      "content": "The pressure exerted by the vapours above the liquid surface in equilibrium with the liquid at a given temperature is called its vapour pressure."
+    },
+    "raoult": {
+      "heading": "Raoult's Law",
+      "content": "For a solution of volatile liquids, the partial vapour pressure of each component in the solution is directly proportional to its mole fraction present in solution."
+    }
+  }
+}

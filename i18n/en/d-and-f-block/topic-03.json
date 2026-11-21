@@ -1,0 +1,41 @@
+{
+  "title": "Transition Elements: Definition, Exceptions & Characteristics",
+  "subtitle": "Definition, Group 12 Exception, Cu/Ag/Au & 8 General Properties",
+  "sections": {
+    "definition": {
+      "heading": "Precise Definition of Transition Elements",
+      "p1": "Transition elements are defined as elements whose atoms possess partially filled d-subshells either in their ground state (elementary state) or in any of their common oxidation states.",
+      "p2": "All d-block elements whose d-orbitals are not completely filled are termed transition elements.",
+      "p3": "In the periodic table, they are situated right between the s-block and p-block. They act as a transition between highly electropositive s-block metals and electronegative p-block non-metals."
+    },
+    "exceptions": {
+      "heading": "Exception: Group 12 Elements (Zn, Cd, Hg, Cn)",
+      "p1": "Elements of Group 12 like Zinc (Zn), Cadmium (Cd), Mercury (Hg), and Copernicium (Cn/Uub) are members of the d-block, but are NOT considered true transition elements.",
+      "reasonTitle": "Reason:",
+      "reason": "Because in both their elemental ground state and their common oxidation states (+2), their d-orbitals are completely filled (d¹⁰). They lack partially filled d-orbitals, which is why they are not classified as true transition elements."
+    },
+    "group11": {
+      "heading": "Group 11 Elements: Cu, Ag, Au",
+      "p1": "In Group 11 elements Cu, Ag, Au, the d-orbitals are fully filled in atomic ground state (d¹⁰ s¹), but in their common oxidation states such as Cu²⁺ (3d⁹), Ag²⁺ (4d⁹) and Au³⁺ (5d⁸), the d-orbitals are partially filled. Therefore, they are classified as transition elements."
+    },
+    "typical": {
+      "heading": "Non-typical vs Typical Transition Elements",
+      "p1": "Elements of Group 3 [Sc, Y, La, Ac] differ in properties from other transition elements: their compounds are trivalent, diamagnetic, and colourless. In contrast, other transition elements exhibit variable oxidation states, coloured ions, and paramagnetism.",
+      "p2": "Elements of Group 3 [Sc, Y, La, Ac] and Group 12 [Zn, Cd, Hg, Uub] are called non-typical (अविशेष) transition elements. These are 8 elements.",
+      "p3": "Other transition elements are called typical (विशेष) transition elements. These are 32 elements."
+    },
+    "properties": {
+      "heading": "8 General Properties of Transition Elements",
+      "list": [
+        "All these elements are metals and good conductors of heat and electricity.",
+        "They exhibit variable oxidation states.",
+        "They display catalytic properties.",
+        "They form coloured compounds.",
+        "They are predominantly paramagnetic.",
+        "They form interstitial compounds.",
+        "They readily form alloys.",
+        "They possess high melting and boiling points."
+      ]
+    }
+  }
+}

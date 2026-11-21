@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <script>window.location.replace("../../index.html#/ideal-nonideal");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NCERT कक्षा 12 रसायन विज्ञान अध्याय 1/2: विलयन — आदर्श और अनादर्श विलयन (Ideal & Non-Ideal Solutions)">
+  <meta name="theme-color" content="#6366F1">
+  <title>आदर्श और अनादर्श विलयन — NCERT Chemistry Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <!-- Project CSS (load in order) -->
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/interactive.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__left">
+      <button class="site-header__hamburger btn btn--icon" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <a href="../../index.html" class="site-header__logo">
+        <span class="site-header__logo-icon" aria-hidden="true">⚗️</span>
+        <span data-i18n="site.title">NCERT विज्ञान ट्यूटोरियल</span>
+      </a>
+    </div>
+
+    <div class="site-header__right">
+      <button class="btn btn--lang" id="lang-toggle" aria-label="Switch language" data-i18n="nav.language">English</button>
+      <button class="btn btn--icon" id="theme-toggle" aria-label="Toggle dark mode" title="डार्क मोड">
+        <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- LAYOUT -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__title" data-i18n="chapter.title">अध्याय 2: विलयन</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"></nav>
+
+      <article class="topic" data-protected="true">
+
+        <header class="topic-header" style="margin-bottom: var(--space-xl);">
+          <span class="badge badge--topic" style="background: var(--color-topic-05-light); color: var(--color-topic-05-dark); margin-bottom: var(--space-sm);">विषय 05</span>
+          <h1 data-i18n="title">आदर्श और अनादर्श विलयन</h1>
+          <p class="topic-subtitle" data-i18n="subtitle" style="font-size: var(--font-size-lg); color: var(--color-text-secondary);">Ideal and Non-Ideal Solutions</p>
+        </header>
+
+        <!-- IDEAL SOLUTIONS -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.intro.heading">आदर्श विलयन (Ideal Solutions)</h2>
+          <p data-i18n="sections.intro.content">
+            वे विलयन जो सभी सांद्रताओं और तापों पर राउल्ट के नियम का पूर्णतः पालन करते हैं, आदर्श विलयन कहलाते हैं।
+          </p>
+
+          <div class="card card--concept" style="margin-top: var(--space-md);">
+            <h4>आदर्श विलयन की आवश्यक शर्तें:</h4>
+            <ul style="padding-left: var(--space-lg); line-height: 1.8;">
+              <li><strong>राउल्ट के नियम का पालन:</strong> \(p_A = p_A^0 \cdot x_A\) तथा \(p_B = p_B^0 \cdot x_B\)</li>
+              <li><strong>मिश्रण का एन्थैल्पी परिवर्तन शून्य:</strong> \(\Delta H_{\text{mix}} = 0\) (ऊष्मा न तो उत्सर्जित होती है और न ही अवशोषित)</li>
+              <li><strong>मिश्रण का आयतन परिवर्तन शून्य:</strong> \(\Delta V_{\text{mix}} = 0\) (मिश्रण का आयतन दोनों घटकों के आयतनों के योग के बराबर होता है)</li>
+              <li><strong>आणविक आकर्षण बल:</strong> \(A-B\) आकर्षण बल लगभग \(A-A\) व \(B-B\) आकर्षण बलों के समान होते हैं।</li>
+            </ul>
+            <div style="margin-top: var(--space-sm); font-size: var(--font-size-sm); color: var(--color-text-muted);">
+              <strong>प्रमुख उदाहरण:</strong> n-हेक्सेन + n-हेप्टेन, बेंजीन + टॉलूईन, ब्रोमोएथेन + क्लोरोएथेन
+            </div>
+          </div>
+        </section>
+
+        <!-- NON-IDEAL SOLUTIONS -->
+        <section class="topic-section">
+          <h2 data-i18n="sections.nonideal.heading">अनादर्श विलयन (Non-Ideal Solutions)</h2>
+          <p data-i18n="sections.nonideal.content">
+            वे विलयन जो सभी सांद्रताओं पर राउल्ट के नियम का पालन नहीं करते, अनादर्श विलयन कहलाते हैं। ये दो प्रकार का विचलन दर्शाते हैं:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin-top: var(--space-md);">
+            <!-- Positive Deviation -->
+            <div class="card" style="border-top: 4px solid var(--color-error);">
+              <h3 style="color: var(--color-error); font-size: var(--font-size-md);">1. धनात्मक विचलन (Positive Deviation)</h3>
+              <p style="font-size: var(--font-size-sm);">वाष्प दाब राउल्ट नियम से प्रत्याशित मान से <strong>अधिक</strong> होता है।</p>
+              <ul style="font-size: var(--font-size-xs); line-height: 1.7; margin-top: var(--space-xs); padding-left: var(--space-md);">
+                <li>\(p_A > p_A^0 x_A\), \(p_B > p_B^0 x_B\)</li>
+                <li>\(\Delta H_{\text{mix}} > 0\) (ऊष्माशोषी)</li>
+                <li>\(\Delta V_{\text{mix}} > 0\) (आयतन प्रसार)</li>
+                <li><strong>कारण:</strong> \(A-B\) आकर्षण बल \(A-A\) व \(B-B\) से <em>दुर्बल</em> होते हैं।</li>
+                <li><strong>उदाहरण:</strong> एथेनॉल + एसीटोन, एसीटोन + \(\text{CS}_2\)</li>
+                <li><strong>एज़ियोट्रोप:</strong> न्यूनतम क्वथनांकी स्थिरक्वाथी (Minimum boiling azeotrope)</li>
+              </ul>
+            </div>
+
+            <!-- Negative Deviation -->
+            <div class="card" style="border-top: 4px solid var(--color-info);">
+              <h3 style="color: var(--color-info); font-size: var(--font-size-md);">2. ऋणात्मक विचलन (Negative Deviation)</h3>
+              <p style="font-size: var(--font-size-sm);">वाष्प दाब राउल्ट नियम से प्रत्याशित मान से <strong>कम</strong> होता है।</p>
+              <ul style="font-size: var(--font-size-xs); line-height: 1.7; margin-top: var(--space-xs); padding-left: var(--space-md);">
+                <li>\(p_A < p_A^0 x_A\), \(p_B < p_B^0 x_B\)</li>
+                <li>\(\Delta H_{\text{mix}} < 0\) (ऊष्माक्षेपी)</li>
+                <li>\(\Delta V_{\text{mix}} < 0\) (आयतन संकुचन)</li>
+                <li><strong>कारण:</strong> \(A-B\) आकर्षण बल \(A-A\) व \(B-B\) से <em>प्रबल</em> होते हैं (जैसे नए हाइड्रोजन बंध बनना)।</li>
+                <li><strong>उदाहरण:</strong> क्लोरोफॉर्म + एसीटोन, \(\text{HNO}_3\) + जल</li>
+                <li><strong>एज़ियोट्रोप:</strong> अधिकतम क्वथनांकी स्थिरक्वाथी (Maximum boiling azeotrope)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE DEVIATION CURVES -->
+        <section class="topic-interactive">
+          <div class="topic-interactive__title">
+            <span class="topic-interactive__title-icon" aria-hidden="true">📈</span>
+            <span>आदर्श बनाम अनादर्श विचलन वक्र (Interactive Deviation Curves)</span>
+          </div>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+            नीचे दिए गए बटनों पर क्लिक करके आदर्श रेखा के सापेक्ष धनात्मक व ऋणात्मक विचलन वक्र देखें:
+          </p>
+
+          <div style="display: flex; gap: var(--space-sm); margin-bottom: var(--space-md); flex-wrap: wrap;">
+            <button class="btn btn--primary" id="btn-show-ideal">आदर्श विलयन (Ideal)</button>
+            <button class="btn btn--secondary" id="btn-show-pos">धनात्मक विचलन (+ve Dev)</button>
+            <button class="btn btn--secondary" id="btn-show-neg">ऋणात्मक विचलन (-ve Dev)</button>
+          </div>
+
+          <div class="graph-container" style="position: relative; height: 320px; width: 100%; background: var(--color-surface); padding: var(--space-sm); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+            <canvas id="deviation-chart"></canvas>
+          </div>
+
+          <div id="dev-explanation" style="margin-top: var(--space-md); padding: var(--space-sm); background: var(--color-primary-bg); border-radius: var(--radius-md); font-size: var(--font-size-sm);">
+            <strong>आदर्श विलयन:</strong> वाष्प दाब सीधे सीधी रेखा (Straight line) का अनुसरण करता है क्योंकि \(A-B\) अंतःक्रियाएँ \(A-A\) व \(B-B\) के समान होती हैं।
+          </div>
+        </section>
+
+        <!-- AZEOTROPES -->
+        <section class="topic-section">
+          <h2>स्थिरक्वाथी मिश्रण (Azeotropes)</h2>
+          <div class="card card--concept">
+            <p>
+              ऐसे द्विअंगी (binary) मिश्रण जिनका द्रव और वाष्प प्रावस्था में संघटन एकसमान होता है तथा जो एक स्थिर ताप पर उबलते हैं, <strong>स्थिरक्वाथी मिश्रण (Azeotropes)</strong> कहलाते हैं।
+            </p>
+            <p style="margin-top: var(--space-xs); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+              इनके घटकों को प्रभाजी आसवन (Fractional Distillation) द्वारा अलग नहीं किया जा सकता।
+            </p>
+          </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="topic-section">
+          <h2>स्व-मूल्यांकन प्रश्न</h2>
+          <div class="card" style="padding: var(--space-md);">
+            <h4>प्रश्न: क्लोरोफॉर्म (\(\text{CHCl}_3\)) और एसीटोन (\(\text{CH}_3\text{COCH}_3\)) का विलयन किस प्रकार का विचलन दर्शाता है?</h4>
+            <div style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: var(--space-xs);" id="dev-quiz-options">
+              <label><input type="radio" name="dev-q" value="0"> धनात्मक विचलन (Positive Deviation)</label>
+              <label><input type="radio" name="dev-q" value="1"> ऋणात्मक विचलन (Negative Deviation)</label>
+              <label><input type="radio" name="dev-q" value="2"> कोई विचलन नहीं (आदर्श)</label>
+            </div>
+            <div id="dev-feedback" style="display: none; padding: var(--space-sm); border-radius: var(--radius-md); margin-top: var(--space-sm);"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <nav class="topic-nav" aria-label="Topic navigation" id="topic-nav"></nav>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.madeFor">MP Board के छात्रों के लिए बनाया गया</p>
+    <p data-i18n="footer.ncert">NCERT पाठ्यक्रम पर आधारित</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

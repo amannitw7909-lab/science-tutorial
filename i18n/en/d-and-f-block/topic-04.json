@@ -1,0 +1,31 @@
+{
+  "title": "Metallic Nature, Atomic Size & Oxidation States",
+  "subtitle": "Metallic Bonding, Atomic Radii Variations & Variable Oxidation States",
+  "sections": {
+    "metallic": {
+      "heading": "Metallic Nature & Crystal Lattices",
+      "p1": "Transition elements are strongly metallic in nature because of high effective nuclear charge and unpaired d-electrons forming robust metallic bonds.",
+      "p2": "This results in high hardness, metallic luster, high melting and boiling points, high enthalpy of atomization, malleability, and ductility.",
+      "p3": "From Sc to Cr, hardness increases with increasing number of unpaired electrons, whereas from Cr to Zn it decreases as pairing begins.",
+      "structures": "Transition elements mainly crystallize in three structures: 1. BCC (Body Centered Cubic), 2. FCC (Face Centered Cubic), 3. HCP (Hexagonal Close Packed). Manganese (Mn) exhibits a unique complex crystal lattice due to its half-filled d⁵ configuration."
+    },
+    "size": {
+      "heading": "Atomic Size (Atomic & Ionic Radii)",
+      "p1": "Atomic radii of transition elements are smaller than s-block elements but larger than p-block elements. E.g., Ca (s-block, 197 pm) > Sc (d-block, 144 pm), Zn (d-block, 125 pm) > Ga (p-block, 122.5 pm).",
+      "p2": "Two opposing factors operate along a transition series: effective nuclear charge (Zeff) and shielding effect (σ). Moving left to right, initially nuclear attraction dominates causing size to decrease, in the middle both balance keeping size nearly constant, and towards the end shielding by paired electrons causes a slight increase in size.",
+      "factors": [
+        "Sc - Cr : Nuclear charge > Shielding effect ⇒ Size decreases",
+        "Cr - Ni : Nuclear charge ≈ Shielding effect ⇒ Size remains almost constant",
+        "Cu - Zn : Nuclear charge < Shielding effect ⇒ Size increases slightly",
+        "4d ≈ 5d : Due to Lanthanoid Contraction, elements of 4d and 5d series have nearly identical radii."
+      ]
+    },
+    "oxidation": {
+      "heading": "Variable Oxidation States",
+      "p1": "d-block elements display multiple oxidation states in their compounds because electrons from both the inner (n-1)d orbitals and the outer ns orbital participate in bonding.",
+      "p2": "From Sc to Mn, the oxidation state increases due to an increase in unpaired d-electrons. After Mn, electrons start pairing up in the d-subshell, reducing the count of unpaired electrons and decreasing the maximum oxidation state down to Zn.",
+      "stability": "Stability Rule: An oxidation state is especially stable if it corresponds to a half-filled (d⁵) or fully filled (d¹⁰) configuration. E.g., Fe³⁺ (d⁵) is more stable than Fe²⁺ (d⁶).",
+      "maxExamples": "Manganese (Mn) shows the highest oxidation state in the 3d series (+7), while Ruthenium (Ru) and Osmium (Os) exhibit up to +8 in the 4d and 5d series."
+    }
+  }
+}

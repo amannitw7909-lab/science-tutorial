@@ -1,0 +1,56 @@
+{
+  "title": "f-Block Elements: Lanthanoid Series & Contraction",
+  "subtitle": "Lanthanoid Series, 4f Configurations, Contraction & Misch Metal",
+  "sections": {
+    "intro": {
+      "heading": "f-Block Elements (Inner Transition Elements)",
+      "p1": "Elements in which the differentiating electron enters the (n – 2)f subshell are termed f-block elements or inner transition elements.",
+      "p2": "These 28 elements are placed separately in two horizontal rows at the bottom of the main periodic table. Formally they belong to Group 3 (III B).",
+      "rareEarth": "Rare Earth Elements: Historically extracted from rare oxide minerals. General electronic configuration: (n – 2)f¹⁻¹⁴ (n – 1)d⁰⁻¹ ns².",
+      "twoSeries": "Divided into two series of 14 elements each: (A) Lanthanoids (4f series), and (B) Actinoids (5f series)."
+    },
+    "lanthanoids": {
+      "heading": "Lanthanoid Series (4f Series)",
+      "p1": "Last electron enters the 4f subshell. Located in the 6th period immediately after Lanthanum (La-57). Comprises 14 elements from Cerium (Ce-58) to Lutetium (Lu-71). Symbolized as Ln.",
+      "p2": "Along with Lanthanum, all 15 elements exhibit extreme chemical similarity due to identical outer electron arrangements.",
+      "p3": "Rare earth metals: Occurred as oxide minerals in nature.",
+      "radioactive": "Radioactivity: Promethium (Pm-61) is the only radioactive element in this series; all other lanthanoids are non-radioactive and stable.",
+      "yttrium": "Similarity with Yttrium: Because Y³⁺ has nearly the same ionic radius as heavy lanthanoids (Dy³⁺/Ho³⁺), they co-occur in nature.",
+      "config": "General electronic configuration: [Xe] 4f⁰⁻¹⁴ 5d⁰⁻¹ 6s²"
+    },
+    "oxidation": {
+      "heading": "Oxidation States of Lanthanoids",
+      "general": "1. Common / Characteristic Oxidation State (+3): The +3 state is the most ubiquitous and stable state for all lanthanoids (Ln³⁺). It is attained by losing the two outer 6s electrons and one inner 4f or 5d electron. Notable: Ce, Gd, and Lu lose their 3rd electron from the 5d orbital.",
+      "anomalous": "2. Anomalous Oxidation States (+2 and +4): Certain lanthanoids exhibit +2 or +4 states to achieve extra thermodynamic stability associated with empty (f⁰), half-filled (f⁷), or completely filled (f¹⁴) subshells.",
+      "redox": "Because +3 is overwhelmingly the most stable state: species in +4 state (e.g. Ce⁴⁺) act as strong oxidizing agents by gaining an electron, while species in +2 state (e.g. Sm²⁺, Eu²⁺, Yb²⁺) act as strong reducing agents by releasing an electron to revert to +3."
+    },
+    "reactions": {
+      "heading": "Chemical Reactivity of Lanthanoids",
+      "list": [
+        "Ln + O₂ = Ln₂O₃ (Oxide)",
+        "Ln + H₂O = Ln(OH)₃ + H₂ (Hydroxide)",
+        "Ln + X₂ = LnX₃ (Halide)",
+        "Ln + N₂ = LnN (Nitride)",
+        "Ln + S = Ln₂S₃ (Sulphide)"
+      ]
+    },
+    "contraction": {
+      "heading": "Lanthanoid Contraction",
+      "definition": "The steady and continuous decrease in atomic and ionic radii of lanthanoid elements with increasing atomic number across the series.",
+      "cause": "Cause: With every increase in nuclear charge (+Z), the additional electron enters an inner 4f orbital. The diffused shape of 4f orbitals provides very poor and ineffective shielding. Hence, the effective nuclear charge pulling outer electrons inward increases steadily.",
+      "consequencesHeading": "3 Major Consequences of Lanthanoid Contraction:",
+      "c1": "(A) Separation of Lanthanoids: Small differences in ionic radii lead to subtle variations in complexing ability and hydration, enabling separation via Ion-Exchange Resin chromatography.",
+      "c2": "(B) Basic Strength of Hydroxides: Basic strength decreases from La(OH)₃ (most basic) to Lu(OH)₃ (least basic) as covalent character increases with decreasing ionic size.",
+      "c3": "(C) Similarity of 4d and 5d Radii ('Chemical Twins'): Due to intervening lanthanoid contraction, 5d elements have almost identical atomic radii to their 4d congener in the same group (e.g., Zr = 160 pm, Hf = 159 pm). Zr and Hf have nearly identical physical and chemical properties and are known as Chemical Twins."
+    },
+    "uses": {
+      "heading": "Major Uses & Misch Metal",
+      "mischMetal": "1. Misch Metal: An alloy consisting of ~95% lanthanoid metals (primarily Ce, La, Nd), ~5% iron, and trace amounts of S, C, Ca, Al. Uses: strong reducing agent, pyrophoric flint in cigarette lighters, bullet jackets, tracer shells, aircraft parts. Mg-Misch metal (30% misch metal + 1% Zr) is used in jet engines for heat and corrosion resistance.",
+      "u2": "2. Catalysts in chemical synthesis",
+      "u3": "3. Sunglasses & UV goggles: Cerium (Ce) glass absorbs both infrared heat and ultraviolet rays.",
+      "u4": "4. Coloured glass and polishing: Nd and Pr oxides give rich colours; CeO₂ is an industry standard optical glass polish.",
+      "u5": "5. Petroleum cracking: Cerium phosphate serves as a vital cracking catalyst.",
+      "u6": "6. Laser technology (e.g. Nd:YAG lasers)"
+    }
+  }
+}
